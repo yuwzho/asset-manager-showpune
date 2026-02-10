@@ -1,0 +1,83 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Upgrade plan to migrate Java project to latest LTS versions",
+  "tasks": [
+    {
+      "type": "upgrade",
+      "id": "001-upgrade-java-version",
+      "description": "Upgrade Java to version 21 (LTS)",
+      "requirements": "Upgrade JDK to version 21, update build configuration (pom.xml or build.gradle) to target Java 21, ensure all Java language features are compatible with Java 21",
+      "dependencies": [],
+      "environmentConfiguration": null,
+      "skills": [
+        {
+          "name": "java-version-upgrade",
+          "location": "builtin"
+        }
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false"
+      },
+      "status": "pending"
+    },
+    {
+      "type": "upgrade",
+      "id": "002-upgrade-spring-boot",
+      "description": "Upgrade Spring Boot to version 3.4 (latest stable)",
+      "requirements": "Upgrade Spring Boot to version 3.4, Spring Framework to 6.x, migrate javax.* packages to jakarta.* namespace, update deprecated APIs, ensure compatibility with Java 21",
+      "dependencies": [
+        "001-upgrade-java-version"
+      ],
+      "environmentConfiguration": null,
+      "skills": [
+        {
+          "name": "java-version-upgrade",
+          "location": "builtin"
+        }
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false"
+      },
+      "status": "pending"
+    },
+    {
+      "type": "upgrade",
+      "id": "003-upgrade-dependencies",
+      "description": "Upgrade other dependencies to compatible versions",
+      "requirements": "Update all third-party dependencies to versions compatible with Java 21 and Spring Boot 3.4, resolve any transitive dependency conflicts, update security-critical dependencies to latest versions",
+      "dependencies": [
+        "002-upgrade-spring-boot"
+      ],
+      "environmentConfiguration": null,
+      "skills": [
+        {
+          "name": "java-version-upgrade",
+          "location": "builtin"
+        }
+      ],
+      "successCriteria": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false"
+      },
+      "status": "pending"
+    }
+  ],
+  "metadata": {
+    "planName": "upgrade-to-lts",
+    "projectName": "application",
+    "language": "java",
+    "createdAt": "2026-02-10T08:35:31.723Z",
+    "version": "1.0"
+  }
+}
