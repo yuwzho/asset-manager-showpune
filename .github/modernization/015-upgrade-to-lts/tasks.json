@@ -54,7 +54,7 @@
         "passUnitTests": "true",
         "passIntegrationTests": "false"
       },
-      "status": "pending"
+      "status": "started"
     },
     {
       "type": "upgrade",
