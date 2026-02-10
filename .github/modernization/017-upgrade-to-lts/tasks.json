@@ -22,7 +22,15 @@
         "passUnitTests": "true",
         "passIntegrationTests": "false"
       },
-      "status": "completed"
+      "status": "success",
+      "taskSummary": "Successfully upgraded Java from 17 to 21 and Spring Boot from 3.2.1 to 3.4.1. All build and unit tests passed. No Jakarta migration was required as the project already uses Spring Boot 3.x with Jakarta EE APIs.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "true",
+        "generateNewIntegrationTests": "true",
+        "passUnitTests": "true",
+        "passIntegrationTests": "true"
+      }
     }
   ],
   "metadata": {
