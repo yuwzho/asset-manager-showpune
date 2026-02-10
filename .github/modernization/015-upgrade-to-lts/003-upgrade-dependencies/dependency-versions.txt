@@ -1,0 +1,36 @@
+Updated Dependency Versions
+===========================
+
+Direct Dependencies:
+-------------------
+software.amazon.awssdk:s3 = 2.41.25
+org.postgresql:postgresql = 42.7.9
+org.projectlombok:lombok = 1.18.42
+com.h2database:h2 = 2.4.240
+
+Spring Boot Managed Dependencies (via parent):
+---------------------------------------------
+org.springframework.boot:spring-boot-starter-parent = 3.4.1
+  - spring-boot-starter-web
+  - spring-boot-starter-thymeleaf
+  - spring-boot-starter-amqp
+  - spring-boot-starter-data-jpa
+  - spring-boot-starter-test
+  - spring-boot-devtools
+  - spring-boot-configuration-processor
+
+com.fasterxml.jackson.core:jackson-databind (managed by Spring Boot)
+
+Build Information:
+-----------------
+Java Version: 21
+Maven Version: 3.9.x (via wrapper)
+Spring Boot Version: 3.4.1
+
+Compatibility Matrix:
+--------------------
+✓ Java 21 LTS
+✓ Spring Boot 3.4.1
+✓ Jakarta EE 10
+✓ Hibernate 6.6.4
+✓ AWS SDK 2.x

@@ -54,7 +54,15 @@
         "passUnitTests": "true",
         "passIntegrationTests": "false"
       },
-      "status": "started"
+      "status": "success",
+      "taskSummary": "Successfully upgraded Spring Boot from 3.2.1 to 3.4.1 and Spring Framework to 6.2.1. All dependencies updated via Spring Boot parent dependency management. Build successful and all unit tests pass. No deprecated APIs or breaking changes detected.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "true",
+        "generateNewIntegrationTests": "true",
+        "passUnitTests": "true",
+        "passIntegrationTests": "true"
+      }
     },
     {
       "type": "upgrade",
@@ -78,7 +86,7 @@
         "passUnitTests": "true",
         "passIntegrationTests": "false"
       },
-      "status": "pending"
+      "status": "started"
     }
   ],
   "metadata": {
