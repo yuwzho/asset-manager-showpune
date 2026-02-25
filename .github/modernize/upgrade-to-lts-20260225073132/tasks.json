@@ -97,7 +97,7 @@
         "passIntegrationTests": "skipped",
         "securityComplianceCheck": "passed"
       }
-  }
+    }
   ],
   "metadata": {
     "planName": "upgrade-to-lts",
