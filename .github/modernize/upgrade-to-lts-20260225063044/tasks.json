@@ -23,7 +23,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "pending"
+      "status": "success",
+      "taskSummary": "Successfully upgraded Java from 17 to 21 (LTS) and Spring Boot from 3.2.1 to 3.4.5. Spring Framework 6.2.x is included transitively. Jakarta EE namespace was already migrated. Build passed with all unit tests passing.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": null
+      }
     }
   ],
   "metadata": {
