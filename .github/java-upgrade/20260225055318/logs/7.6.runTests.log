@@ -1,0 +1,64 @@
+2026-02-25T05:58:40.238Z [INFO] [BaseBuildTool] Firing config modified event for mvnw, sleeping for 5 seconds
+2026-02-25T05:58:40.238Z [INFO] [Environment] Running command (Java 21): mvnw --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\yuwzho\.m2\wrapper\dists\apache-maven-3.9.9\977a63e90f436cd6ade95b4c0e10c20c
+Java version: 21.0.10, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21.0.10
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-25T05:58:41.733Z [INFO] [BaseBuildTool] New version of mvnw: 3.9.9 -> 3.9.9
+2026-02-25T05:58:41.733Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\asset-manager-showpune-fork from pom.xml
+2026-02-25T05:58:41.734Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:58:41.735Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\web\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\worker\pom.xml
+2026-02-25T05:58:41.736Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml: 21
+2026-02-25T05:58:41.736Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-02-25T05:58:41.738Z [INFO] Running tests...
+2026-02-25T05:58:41.739Z [INFO] [MavenBuildTool] Running test cases of D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:58:41.739Z [INFO] [Environment] Running command (Java 21): mvnw clean test -q -B -fn
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+13:58:51.467 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.microsoft.migration.assets.AssetsManagerApplicationTests]: AssetsManagerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:58:51.566 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.microsoft.migration.assets.AssetsManagerApplication for test class com.microsoft.migration.assets.AssetsManagerApplicationTests
+13:58:51.717 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2026-02-25T13:58:51.960+08:00  INFO 33228 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : Starting AssetsManagerApplicationTests using Java 21.0.10 with PID 33228 (started by yuwzho in D:\code\ai\samples\repos\asset-manager-showpune-fork\web)
+2026-02-25T13:58:51.960+08:00  INFO 33228 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2026-02-25T13:58:52.674+08:00  INFO 33228 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-25T13:58:52.721+08:00  INFO 33228 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2026-02-25T13:58:53.275+08:00  INFO 33228 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-25T13:58:53.322+08:00  INFO 33228 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2026-02-25T13:58:53.354+08:00  INFO 33228 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-25T13:58:53.702+08:00  INFO 33228 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-25T13:58:53.750+08:00  INFO 33228 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-25T13:58:53.925+08:00  INFO 33228 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-25T13:58:53.925+08:00  INFO 33228 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-25T13:58:53.946+08:00  WARN 33228 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-25T13:58:53.956+08:00  INFO 33228 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-25T13:58:54.564+08:00  INFO 33228 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-25T13:58:54.580+08:00  INFO 33228 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T13:58:55.865+08:00  WARN 33228 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-25T13:58:56.344+08:00  INFO 33228 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : Started AssetsManagerApplicationTests in 4.642 seconds (process running for 5.527)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\yuwzho\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-02-25T05:58:58.647Z [INFO] [MavenBuildTool] loading surefire reports.
+2026-02-25T05:58:58.655Z [INFO] [MavenBuildTool] summarizing surefire reports.
+2026-02-25T05:58:58.656Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:58:58.656Z [INFO] [Environment] Running command (Java 21): mvnw clean -q -B -fn

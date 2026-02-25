@@ -1,0 +1,649 @@
+2026-02-25T05:59:05.770Z [INFO] [Project asset-manager-showpune-fork]: getting Java version.
+2026-02-25T05:59:05.771Z [INFO] [Project asset-manager-showpune-fork]: got Java version: 21
+2026-02-25T05:59:05.771Z [INFO] [Project asset-manager-showpune-fork]: getting project state.
+2026-02-25T05:59:05.772Z [INFO] [BaseBuildTool] Firing config modified event for mvnw, sleeping for 5 seconds
+2026-02-25T05:59:05.772Z [INFO] [Environment] Running command (Java 21): mvnw --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\yuwzho\.m2\wrapper\dists\apache-maven-3.9.9\977a63e90f436cd6ade95b4c0e10c20c
+Java version: 21.0.10, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21.0.10
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-25T05:59:07.283Z [INFO] [BaseBuildTool] New version of mvnw: 3.9.9 -> 3.9.9
+2026-02-25T05:59:07.283Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\asset-manager-showpune-fork from pom.xml
+2026-02-25T05:59:07.284Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:59:07.284Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\web\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\worker\pom.xml
+2026-02-25T05:59:07.285Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml: 21
+2026-02-25T05:59:07.286Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-02-25T05:59:07.288Z [INFO] [Project asset-manager-showpune-fork]: getting Java version.
+2026-02-25T05:59:07.288Z [INFO] [Project asset-manager-showpune-fork]: got Java version: 21
+2026-02-25T05:59:07.289Z [INFO] [Project asset-manager-showpune-fork]: getting dependencies promise.
+2026-02-25T05:59:07.289Z [INFO] [Project asset-manager-showpune-fork]: reset dependencies promise.
+2026-02-25T05:59:07.289Z [INFO] [Environment] Running command (Java 21): mvnw dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] assets-manager-parent                                              [pom]
+[INFO] assets-manager-web                                                 [jar]
+[INFO] assets-manager-worker                                              [jar]
+[INFO] 
+[INFO] -----------< com.microsoft.migration:assets-manager-parent >------------
+[INFO] Building assets-manager-parent 0.0.1-SNAPSHOT                      [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.8.1:tree (default-cli) @ assets-manager-parent ---
+[INFO] com.microsoft.migration:assets-manager-parent:pom:0.0.1-SNAPSHOT
+[INFO] 
+[INFO] -------------< com.microsoft.migration:assets-manager-web >-------------
+[INFO] Building assets-manager-web 0.0.1-SNAPSHOT                         [2/3]
+[INFO]   from web\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.8.1:tree (default-cli) @ assets-manager-web ---
+[INFO] com.microsoft.migration:assets-manager-web:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-thymeleaf:jar:3.4.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:3.4.5:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:3.4.5:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.5.18:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.5.18:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.24.3:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.24.3:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.17:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:2.3:compile
+[INFO] |  \- org.thymeleaf:thymeleaf-spring6:jar:3.1.3.RELEASE:compile
+[INFO] |     +- org.thymeleaf:thymeleaf:jar:3.1.3.RELEASE:compile
+[INFO] |     |  +- org.attoparser:attoparser:jar:2.0.7.RELEASE:compile
+[INFO] |     |  \- org.unbescape:unbescape:jar:1.1.6.RELEASE:compile
+[INFO] |     \- org.slf4j:slf4j-api:jar:2.0.17:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:3.4.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:3.4.5:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.18.3:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.18.3:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.3:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.18.3:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.18.3:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.18.3:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:3.4.5:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.40:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.40:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.40:compile
+[INFO] |  +- org.springframework:spring-web:jar:6.2.6:compile
+[INFO] |  |  +- org.springframework:spring-beans:jar:6.2.6:compile
+[INFO] |  |  \- io.micrometer:micrometer-observation:jar:1.14.6:compile
+[INFO] |  |     \- io.micrometer:micrometer-commons:jar:1.14.6:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:6.2.6:compile
+[INFO] |     +- org.springframework:spring-aop:jar:6.2.6:compile
+[INFO] |     +- org.springframework:spring-context:jar:6.2.6:compile
+[INFO] |     \- org.springframework:spring-expression:jar:6.2.6:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-amqp:jar:3.4.5:compile
+[INFO] |  +- org.springframework:spring-messaging:jar:6.2.6:compile
+[INFO] |  \- org.springframework.amqp:spring-rabbit:jar:3.2.5:compile
+[INFO] |     +- org.springframework.amqp:spring-amqp:jar:3.2.5:compile
+[INFO] |     |  \- org.springframework.retry:spring-retry:jar:2.0.11:compile
+[INFO] |     +- com.rabbitmq:amqp-client:jar:5.22.0:compile
+[INFO] |     \- org.springframework:spring-tx:jar:6.2.6:compile
+[INFO] +- software.amazon.awssdk:s3:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-xml-protocol:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:aws-query-protocol:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:protocol-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:arns:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:profiles:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:crt-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:identity-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-spi:jar:2.25.13:compile
+[INFO] |  |  \- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-aws:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:sdk-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:auth:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.eventstream:eventstream:jar:1.0.1:compile
+[INFO] |  +- software.amazon.awssdk:http-client-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:regions:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:annotations:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:utils:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:metrics-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:json-utils:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:third-party-jackson-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:endpoints-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:apache-client:jar:2.25.13:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.13:runtime
+[INFO] |  |  |  \- commons-logging:commons-logging:jar:1.2:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:runtime
+[INFO] |  |  \- commons-codec:commons-codec:jar:1.17.2:runtime
+[INFO] |  \- software.amazon.awssdk:netty-nio-client:jar:2.25.13:runtime
+[INFO] |     +- io.netty:netty-codec-http:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-codec-http2:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-codec:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-transport:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-common:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-buffer:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-handler:jar:4.1.119.Final:runtime
+[INFO] |     |  \- io.netty:netty-transport-native-unix-common:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-transport-classes-epoll:jar:4.1.119.Final:runtime
+[INFO] |     \- io.netty:netty-resolver:jar:4.1.119.Final:runtime
+[INFO] +- org.springframework.boot:spring-boot-devtools:jar:3.4.5:runtime (optional)
+[INFO] |  +- org.springframework.boot:spring-boot:jar:3.4.5:compile
+[INFO] |  \- org.springframework.boot:spring-boot-autoconfigure:jar:3.4.5:compile
+[INFO] +- org.springframework.boot:spring-boot-configuration-processor:jar:3.4.5:compile (optional)
+[INFO] +- org.projectlombok:lombok:jar:1.18.38:compile (optional)
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:3.4.5:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:3.4.5:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:3.4.5:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.9.0:test
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:runtime
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:2.1.3:runtime
+[INFO] |  +- net.minidev:json-smart:jar:2.5.2:test
+[INFO] |  |  \- net.minidev:accessors-smart:jar:2.5.2:test
+[INFO] |  |     \- org.ow2.asm:asm:jar:9.7.1:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.26.3:test
+[INFO] |  |  \- net.bytebuddy:byte-buddy:jar:1.15.11:runtime
+[INFO] |  +- org.awaitility:awaitility:jar:4.2.2:test
+[INFO] |  +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter:jar:5.11.4:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-api:jar:5.11.4:test
+[INFO] |  |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |  |  |  +- org.junit.platform:junit-platform-commons:jar:1.11.4:test
+[INFO] |  |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-params:jar:5.11.4:test
+[INFO] |  |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.11.4:test
+[INFO] |  |     \- org.junit.platform:junit-platform-engine:jar:1.11.4:test
+[INFO] |  +- org.mockito:mockito-core:jar:5.14.2:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.15.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:3.3:test
+[INFO] |  +- org.mockito:mockito-junit-jupiter:jar:5.14.2:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.3:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:6.2.6:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:6.2.6:compile
+[INFO] |  +- org.springframework:spring-test:jar:6.2.6:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.10.0:test
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:3.4.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:3.4.5:compile
+[INFO] |  |  +- com.zaxxer:HikariCP:jar:5.1.0:compile
+[INFO] |  |  \- org.springframework:spring-jdbc:jar:6.2.6:compile
+[INFO] |  +- org.hibernate.orm:hibernate-core:jar:6.6.13.Final:compile
+[INFO] |  |  +- jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile
+[INFO] |  |  +- jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.6.1.Final:runtime
+[INFO] |  |  +- org.hibernate.common:hibernate-commons-annotations:jar:7.0.3.Final:runtime
+[INFO] |  |  +- io.smallrye:jandex:jar:3.2.0:runtime
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.7.0:runtime
+[INFO] |  |  +- org.glassfish.jaxb:jaxb-runtime:jar:4.0.5:runtime
+[INFO] |  |  |  \- org.glassfish.jaxb:jaxb-core:jar:4.0.5:runtime
+[INFO] |  |  |     +- org.eclipse.angus:angus-activation:jar:2.0.2:runtime
+[INFO] |  |  |     +- org.glassfish.jaxb:txw2:jar:4.0.5:runtime
+[INFO] |  |  |     \- com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime
+[INFO] |  |  +- jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime
+[INFO] |  |  \- org.antlr:antlr4-runtime:jar:4.13.0:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:3.4.5:compile
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:3.4.5:compile
+[INFO] |  |  \- org.springframework:spring-orm:jar:6.2.6:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:6.2.6:compile
+[INFO] |     \- org.aspectj:aspectjweaver:jar:1.9.24:compile
+[INFO] +- org.postgresql:postgresql:jar:42.7.7:runtime
+[INFO] |  \- org.checkerframework:checker-qual:jar:3.49.3:runtime
+[INFO] \- com.h2database:h2:jar:2.3.232:test
+[INFO] 
+[INFO] -----------< com.microsoft.migration:assets-manager-worker >------------
+[INFO] Building assets-manager-worker 0.0.1-SNAPSHOT                      [3/3]
+[INFO]   from worker\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.8.1:tree (default-cli) @ assets-manager-worker ---
+[INFO] com.microsoft.migration:assets-manager-worker:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter:jar:3.4.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot:jar:3.4.5:compile
+[INFO] |  |  \- org.springframework:spring-context:jar:6.2.6:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:6.2.6:compile
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:3.4.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-logging:jar:3.4.5:compile
+[INFO] |  |  +- ch.qos.logback:logback-classic:jar:1.5.18:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-core:jar:1.5.18:compile
+[INFO] |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.24.3:compile
+[INFO] |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.24.3:compile
+[INFO] |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.17:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile
+[INFO] |  +- org.springframework:spring-core:jar:6.2.6:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:6.2.6:compile
+[INFO] |  \- org.yaml:snakeyaml:jar:2.3:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-amqp:jar:3.4.5:compile
+[INFO] |  +- org.springframework:spring-messaging:jar:6.2.6:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:6.2.6:compile
+[INFO] |  \- org.springframework.amqp:spring-rabbit:jar:3.2.5:compile
+[INFO] |     +- org.springframework.amqp:spring-amqp:jar:3.2.5:compile
+[INFO] |     |  \- org.springframework.retry:spring-retry:jar:2.0.11:compile
+[INFO] |     +- com.rabbitmq:amqp-client:jar:5.22.0:compile
+[INFO] |     +- org.springframework:spring-tx:jar:6.2.6:compile
+[INFO] |     \- io.micrometer:micrometer-observation:jar:1.14.6:compile
+[INFO] |        \- io.micrometer:micrometer-commons:jar:1.14.6:compile
+[INFO] +- software.amazon.awssdk:s3:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-xml-protocol:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:aws-query-protocol:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:protocol-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:arns:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:profiles:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:crt-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:identity-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-spi:jar:2.25.13:compile
+[INFO] |  |  \- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-aws:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:sdk-core:jar:2.25.13:compile
+[INFO] |  |  \- org.slf4j:slf4j-api:jar:2.0.17:compile
+[INFO] |  +- software.amazon.awssdk:auth:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.eventstream:eventstream:jar:1.0.1:compile
+[INFO] |  +- software.amazon.awssdk:http-client-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:regions:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:annotations:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:utils:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:metrics-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:json-utils:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:third-party-jackson-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:endpoints-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:apache-client:jar:2.25.13:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.13:runtime
+[INFO] |  |  |  \- commons-logging:commons-logging:jar:1.2:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:runtime
+[INFO] |  |  \- commons-codec:commons-codec:jar:1.17.2:runtime
+[INFO] |  \- software.amazon.awssdk:netty-nio-client:jar:2.25.13:runtime
+[INFO] |     +- io.netty:netty-codec-http:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-codec-http2:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-codec:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-transport:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-common:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-buffer:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-handler:jar:4.1.119.Final:runtime
+[INFO] |     |  \- io.netty:netty-transport-native-unix-common:jar:4.1.119.Final:runtime
+[INFO] |     +- io.netty:netty-transport-classes-epoll:jar:4.1.119.Final:runtime
+[INFO] |     \- io.netty:netty-resolver:jar:4.1.119.Final:runtime
+[INFO] +- org.projectlombok:lombok:jar:1.18.38:compile (optional)
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:3.4.5:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:3.4.5:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:3.4.5:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.9.0:test
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.2:runtime
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:2.1.3:runtime
+[INFO] |  +- net.minidev:json-smart:jar:2.5.2:test
+[INFO] |  |  \- net.minidev:accessors-smart:jar:2.5.2:test
+[INFO] |  |     \- org.ow2.asm:asm:jar:9.7.1:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.26.3:test
+[INFO] |  |  \- net.bytebuddy:byte-buddy:jar:1.15.11:runtime
+[INFO] |  +- org.awaitility:awaitility:jar:4.2.2:test
+[INFO] |  +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter:jar:5.11.4:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-api:jar:5.11.4:test
+[INFO] |  |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |  |  |  +- org.junit.platform:junit-platform-commons:jar:1.11.4:test
+[INFO] |  |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-params:jar:5.11.4:test
+[INFO] |  |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.11.4:test
+[INFO] |  |     \- org.junit.platform:junit-platform-engine:jar:1.11.4:test
+[INFO] |  +- org.mockito:mockito-core:jar:5.14.2:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.15.11:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:3.3:test
+[INFO] |  +- org.mockito:mockito-junit-jupiter:jar:5.14.2:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.3:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-test:jar:6.2.6:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.10.0:test
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.18.3:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.18.3:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.18.3:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:3.4.5:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:3.4.5:compile
+[INFO] |  |  +- com.zaxxer:HikariCP:jar:5.1.0:compile
+[INFO] |  |  \- org.springframework:spring-jdbc:jar:6.2.6:compile
+[INFO] |  +- org.hibernate.orm:hibernate-core:jar:6.6.13.Final:compile
+[INFO] |  |  +- jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile
+[INFO] |  |  +- jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.6.1.Final:runtime
+[INFO] |  |  +- org.hibernate.common:hibernate-commons-annotations:jar:7.0.3.Final:runtime
+[INFO] |  |  +- io.smallrye:jandex:jar:3.2.0:runtime
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.7.0:runtime
+[INFO] |  |  +- org.glassfish.jaxb:jaxb-runtime:jar:4.0.5:runtime
+[INFO] |  |  |  \- org.glassfish.jaxb:jaxb-core:jar:4.0.5:runtime
+[INFO] |  |  |     +- org.eclipse.angus:angus-activation:jar:2.0.2:runtime
+[INFO] |  |  |     +- org.glassfish.jaxb:txw2:jar:4.0.5:runtime
+[INFO] |  |  |     \- com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime
+[INFO] |  |  +- jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime
+[INFO] |  |  \- org.antlr:antlr4-runtime:jar:4.13.0:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:3.4.5:compile
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:3.4.5:compile
+[INFO] |  |  +- org.springframework:spring-orm:jar:6.2.6:compile
+[INFO] |  |  \- org.springframework:spring-aop:jar:6.2.6:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:6.2.6:compile
+[INFO] |     \- org.aspectj:aspectjweaver:jar:1.9.24:compile
+[INFO] \- org.postgresql:postgresql:jar:42.7.7:runtime
+[INFO]    \- org.checkerframework:checker-qual:jar:3.49.3:runtime
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for assets-manager-parent 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] assets-manager-parent .............................. SUCCESS [  1.072 s]
+[INFO] assets-manager-web ................................. SUCCESS [  0.661 s]
+[INFO] assets-manager-worker .............................. SUCCESS [  0.016 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.379 s
+[INFO] Finished at: 2026-02-25T13:59:12+08:00
+[INFO] ------------------------------------------------------------------------
+2026-02-25T05:59:12.296Z [INFO] [MavenBuildTool] Successfully got dependency tree of D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:59:12.297Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\asset-manager-showpune-fork from pom.xml
+2026-02-25T05:59:12.297Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:59:12.298Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\web\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\worker\pom.xml
+2026-02-25T05:59:12.299Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml: 21
+2026-02-25T05:59:12.299Z [INFO] [MavenBuildTool] Getting build errors of D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:59:12.300Z [INFO] [Environment] Running command (Java 21): mvnw clean test-compile -q -B -fn
+2026-02-25T05:59:22.990Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-02-25T05:59:22.991Z [INFO] [BaseBuildTool] Found 3 modules: ., web, worker
+2026-02-25T05:59:23.004Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-02-25T05:59:23.004Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:59:23.005Z [INFO] [Environment] Running command (Java 21): mvnw clean -q -B -fn
+2026-02-25T05:59:26.140Z [INFO] [MavenBuildTool] Running test cases of D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:59:26.141Z [INFO] [Environment] Running command (Java 21): mvnw clean test -q -B -fn
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+13:59:36.487 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.microsoft.migration.assets.AssetsManagerApplicationTests]: AssetsManagerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:59:36.595 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.microsoft.migration.assets.AssetsManagerApplication for test class com.microsoft.migration.assets.AssetsManagerApplicationTests
+13:59:36.737 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.4.5)
+
+2026-02-25T13:59:36.987+08:00  INFO 30820 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : Starting AssetsManagerApplicationTests using Java 21.0.10 with PID 30820 (started by yuwzho in D:\code\ai\samples\repos\asset-manager-showpune-fork\web)
+2026-02-25T13:59:36.987+08:00  INFO 30820 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2026-02-25T13:59:37.674+08:00  INFO 30820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-25T13:59:37.737+08:00  INFO 30820 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interface.
+2026-02-25T13:59:38.259+08:00  INFO 30820 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-25T13:59:38.322+08:00  INFO 30820 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.13.Final
+2026-02-25T13:59:38.354+08:00  INFO 30820 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-25T13:59:38.702+08:00  INFO 30820 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-25T13:59:38.734+08:00  INFO 30820 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-25T13:59:38.894+08:00  INFO 30820 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-25T13:59:38.894+08:00  INFO 30820 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-25T13:59:38.910+08:00  WARN 30820 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-25T13:59:38.926+08:00  INFO 30820 --- [           main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 2.3.232
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-02-25T13:59:39.513+08:00  INFO 30820 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-25T13:59:39.536+08:00  INFO 30820 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T13:59:40.679+08:00  WARN 30820 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-25T13:59:41.104+08:00  INFO 30820 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : Started AssetsManagerApplicationTests in 4.382 seconds (process running for 5.263)
+Mockito is currently self-attaching to enable the inline-mock-maker. This will no longer work in future releases of the JDK. Please add Mockito as an agent to your build what is described in Mockito's documentation: https://javadoc.io/doc/org.mockito/mockito-core/latest/org/mockito/Mockito.html#0.3
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+WARNING: A Java agent has been loaded dynamically (C:\Users\yuwzho\.m2\repository\net\bytebuddy\byte-buddy-agent\1.15.11\byte-buddy-agent-1.15.11.jar)
+WARNING: If a serviceability tool is in use, please run with -XX:+EnableDynamicAgentLoading to hide this warning
+WARNING: If a serviceability tool is not in use, please run with -Djdk.instrument.traceUsage for more information
+WARNING: Dynamic loading of agents will be disallowed by default in a future release
+2026-02-25T05:59:43.494Z [INFO] [MavenBuildTool] loading surefire reports.
+2026-02-25T05:59:43.502Z [INFO] [MavenBuildTool] summarizing surefire reports.
+2026-02-25T05:59:43.502Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:59:43.503Z [INFO] [Environment] Running command (Java 21): mvnw clean -q -B -fn
+2026-02-25T05:59:46.628Z [INFO] Add test changes to summary...
+2026-02-25T05:59:46.717Z [INFO] 3	2	pom.xml
+1	1	web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
+3	3	web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
+1	1	web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
+4	2	web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+1	1	worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
+5	5	worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
+1	2	worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+
+2026-02-25T05:59:46.724Z [INFO] Add test errors to summary...
+2026-02-25T05:59:46.724Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-thymeleaf:3.4.5
+  - org.springframework.boot:spring-boot-starter-web:3.4.5
+  - org.springframework.boot:spring-boot-starter-amqp:3.4.5
+  - software.amazon.awssdk:s3:2.25.13
+  - org.springframework.boot:spring-boot-devtools:3.4.5
+  - org.springframework.boot:spring-boot-configuration-processor:3.4.5
+  - org.projectlombok:lombok:1.18.38
+  - org.springframework.boot:spring-boot-starter-test:3.4.5
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.4.5
+  - org.postgresql:postgresql:42.7.7
+  - com.h2database:h2:2.3.232
+  - org.springframework.boot:spring-boot-starter:3.4.5
+  - org.springframework.boot:spring-boot-starter-amqp:3.4.5
+  - software.amazon.awssdk:s3:2.25.13
+  - org.projectlombok:lombok:1.18.38
+  - org.springframework.boot:spring-boot-starter-test:3.4.5
+  - com.fasterxml.jackson.core:jackson-databind:2.18.3
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.4.5
+  - org.postgresql:postgresql:42.7.7
+  - java:*:21...
+2026-02-25T05:59:46.725Z [INFO] getting gitHub access token...
+2026-02-25T05:59:46.725Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-02-25T05:59:46.726Z [INFO] Processing batch 1/1, size: 20
+2026-02-25T05:59:46.726Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-thymeleaf:3.4.5",
+  "org.springframework.boot:spring-boot-starter-web:3.4.5",
+  "org.springframework.boot:spring-boot-starter-amqp:3.4.5",
+  "software.amazon.awssdk:s3:2.25.13",
+  "org.springframework.boot:spring-boot-devtools:3.4.5",
+  "org.springframework.boot:spring-boot-configuration-processor:3.4.5",
+  "org.projectlombok:lombok:1.18.38",
+  "org.springframework.boot:spring-boot-starter-test:3.4.5",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.5",
+  "org.postgresql:postgresql:42.7.7",
+  "com.h2database:h2:2.3.232",
+  "org.springframework.boot:spring-boot-starter:3.4.5",
+  "org.springframework.boot:spring-boot-starter-amqp:3.4.5",
+  "software.amazon.awssdk:s3:2.25.13",
+  "org.projectlombok:lombok:1.18.38",
+  "org.springframework.boot:spring-boot-starter-test:3.4.5",
+  "com.fasterxml.jackson.core:jackson-databind:2.18.3",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.5",
+  "org.postgresql:postgresql:42.7.7",
+  "java:*:21"
+]
+2026-02-25T05:59:47.326Z [INFO] Fetched 0 total advisories across all pages
+2026-02-25T05:59:47.425Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-02-25T05:59:47.426Z [INFO] done getting 0 CVEs for 20 dependencies
+2026-02-25T05:59:47.426Z [INFO] calculating patched version by dep...
+2026-02-25T05:59:47.427Z [INFO] finished getting CVEs for dependencies.
+2026-02-25T05:59:47.514Z [INFO] diff --git a/pom.xml b/pom.xml
+index 8fa044e..51f1e5c 100644
+--- a/pom.xml
++++ b/pom.xml
+@@ -6,7 +6,7 @@
+     <parent>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-parent</artifactId>
+-        <version>3.2.1</version>
++        <version>3.4.5</version>
+         <relativePath/> <!-- lookup parent from repository -->
+     </parent>
+     
+@@ -16,7 +16,8 @@
+     <packaging>pom</packaging>
+     
+     <properties>
+-        <java.version>17</java.version>
++        <java.version>21</java.version>
++        <postgresql.version>42.7.7</postgresql.version>
+     </properties>
+ 
+     <modules>
+diff --git a/web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java b/web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
+index ec2e69e..d932f9d 100644
+--- a/web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
++++ b/web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
+@@ -22,7 +22,7 @@ public class AwsS3Config {
+     private String region;
+ 
+     @Bean
+-    public S3Client s3Client() {
++    S3Client s3Client() {
+         AwsBasicCredentials awsCredentials = AwsBasicCredentials.create(accessKey, secretKey);
+         
+         return S3Client.builder()
+diff --git a/web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java b/web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
+index debe10c..f062493 100644
+--- a/web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
++++ b/web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
+@@ -16,17 +16,17 @@ public class RabbitConfig {
+     public static final String QUEUE_NAME = "image-processing";
+ 
+     @Bean
+-    public Queue imageProcessingQueue() {
++    Queue imageProcessingQueue() {
+         return QueueBuilder.durable(QUEUE_NAME).build();
+     }
+ 
+     @Bean
+-    public MessageConverter jsonMessageConverter() {
++    MessageConverter jsonMessageConverter() {
+         return new Jackson2JsonMessageConverter();
+     }
+ 
+     @Bean
+-    public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(
++    SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(
+             ConnectionFactory connectionFactory,
+             SimpleRabbitListenerContainerFactoryConfigurer configurer) {
+         SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
+diff --git a/web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java b/web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
+index bfb4a3b..2db2268 100644
+--- a/web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
++++ b/web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
+@@ -38,7 +38,7 @@ public class S3Controller {
+     }
+ 
+     @PostMapping("/upload")
+-    public String uploadObject(@RequestParam("file") MultipartFile file, RedirectAttributes redirectAttributes) {
++    public String uploadObject(@RequestParam MultipartFile file, RedirectAttributes redirectAttributes) {
+         try {
+             if (file.isEmpty()) {
+                 redirectAttributes.addFlashAttribute("error", "Please select a file to upload");
+diff --git a/web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java b/web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+index 83672e0..400b246 100644
+--- a/web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
++++ b/web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+@@ -13,7 +13,9 @@ import org.springframework.web.multipart.MultipartFile;
+ 
+ import jakarta.annotation.PostConstruct;
+ import java.io.*;
+-import java.nio.file.*;
++import java.nio.file.Files;
++import java.nio.file.Path;
++import java.nio.file.StandardCopyOption;
+ import java.nio.file.attribute.BasicFileAttributes;
+ import java.util.ArrayList;
+ import java.util.List;
+@@ -40,7 +42,7 @@ public class LocalFileStora
+2026-02-25T05:59:47.517Z [INFO] geService implements StorageService {
+     
+     @PostConstruct
+     public void init() throws IOException {
+-        rootLocation = Paths.get(storageDirectory).toAbsolutePath().normalize();
++        rootLocation = Path.of(storageDirectory).toAbsolutePath().normalize();
+         logger.info("Local storage directory: {}", rootLocation);
+         
+         // Create directory if it doesn't exist
+diff --git a/worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java b/worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
+index 1f4d815..2837c9b 100644
+--- a/worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
++++ b/worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
+@@ -20,7 +20,7 @@ public class AwsS3Config {
+     private String region;
+ 
+     @Bean
+-    public S3Client s3Client() {
++    S3Client s3Client() {
+         AwsBasicCredentials awsCredentials = AwsBasicCredentials.create(accessKeyId, secretKey);
+         return S3Client.builder()
+                 .region(Region.of(region))
+diff --git a/worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java b/worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
+index e86c974..8ae5260 100644
+--- a/worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
++++ b/worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
+@@ -21,17 +21,17 @@ public class RabbitConfig {
+     public static final int MAX_ATTEMPTS = 3; // Maximum number of retry attempts
+ 
+     @Bean
+-    public Queue imageProcessingQueue() {
++    Queue imageProcessingQueue() {
+         return QueueBuilder.durable(QUEUE_NAME).build();
+     }
+ 
+     @Bean
+-    public MessageConverter jsonMessageConverter() {
++    MessageConverter jsonMessageConverter() {
+         return new Jackson2JsonMessageConverter();
+     }
+ 
+     @Bean
+-    public SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(
++    SimpleRabbitListenerContainerFactory rabbitListenerContainerFactory(
+             ConnectionFactory connectionFactory,
+             SimpleRabbitListenerContainerFactoryConfigurer configurer) {
+         SimpleRabbitListenerContainerFactory factory = new SimpleRabbitListenerContainerFactory();
+@@ -40,9 +40,9 @@ public class RabbitConfig {
+         factory.setAcknowledgeMode(AcknowledgeMode.MANUAL);
+         return factory;
+     }
+-    
++
+     @Bean
+-    public RetryTemplate retryTemplate() {
++    RetryTemplate retryTemplate() {
+         RetryTemplate retryTemplate = new RetryTemplate();
+         
+         // Configure retry policy (number of attempts)
+diff --git a/worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java b/worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+index 558c0a5..97f8c5c 100644
+--- a/worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
++++ b/worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+@@ -6,7 +6,6 @@ import org.springframework.stereotype.Service;
+ import jakarta.annotation.PostConstruct;
+ import java.nio.file.Files;
+ import java.nio.file.Path;
+-import java.nio.file.Paths;
+ import java.nio.file.StandardCopyOption;
+ import org.slf4j.Logger;
+ import org.slf4j.LoggerFactory;
+@@ -24,7 +23,7 @@ public class LocalFileProcessingService extends AbstractFileProcessingService {
+     
+     @PostConstruct
+     public void init() throws Exception {
+-        rootLocation = Paths.get(storageDirectory).toAbsolutePath().normalize();
++        rootLocation = Path.of(storageDirectory).toAbsolutePath().normalize();
+         logger.info("Local storage directory: {}", rootLocation);
+         
+         if (!Files.exists(rootLocation)) {
+
+2026-02-25T05:59:47.527Z [INFO] [unknown]: getting broken files...
+2026-02-25T05:59:47.528Z [INFO] [unknown]: found 0 broken files.
+2026-02-25T05:59:47.528Z [INFO] [unknown]: there are 169 lines.
+2026-02-25T05:59:48.058Z [INFO] [unknown]: there are 1854 tokens.
+2026-02-25T05:59:48.059Z [INFO] [unknown]: no need to split the diff file.
+2026-02-25T05:59:48.060Z [INFO] summarizing behavior changes...
+2026-02-25T05:59:48.060Z [INFO] summarizing behavior changes of part 1...
+2026-02-25T05:59:48.064Z [INFO] summarized behavior changes of part 1.
+2026-02-25T05:59:48.065Z [INFO] summarized behavior changes of all parts.
+2026-02-25T05:59:48.065Z [INFO] summarizing behavior changes...
+2026-02-25T05:59:48.066Z [INFO] summarizing behavior changes of part 1...
+2026-02-25T05:59:48.068Z [INFO] summarized behavior changes of part 1.
+2026-02-25T05:59:48.069Z [INFO] summarized behavior changes of all parts.
+2026-02-25T05:59:48.069Z [INFO] summarizing behavior changes...
+2026-02-25T05:59:48.070Z [INFO] summarizing behavior changes of part 1...
+2026-02-25T05:59:48.072Z [INFO] summarized behavior changes of part 1.
+2026-02-25T05:59:48.072Z [INFO] summarized behavior changes of all parts.

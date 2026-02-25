@@ -1,0 +1,1519 @@
+2026-02-25T05:36:32.622Z [INFO] Initializing project configuration...
+2026-02-25T05:36:32.623Z [INFO] Project D:\code\ai\samples\repos\asset-manager-showpune-fork is a maven project, try to get java version from pom.xml
+2026-02-25T05:36:32.626Z [INFO] Project java version: 21
+2026-02-25T05:36:32.627Z [INFO] Maven project detected.
+2026-02-25T05:36:32.628Z [INFO] Build tool type: mvnw
+2026-02-25T05:36:32.673Z [INFO] [Environment] Running command (Java 21): java -version
+java version "21.0.10" 2026-01-20 LTS
+Java(TM) SE Runtime Environment (build 21.0.10+8-LTS-217)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.10+8-LTS-217, mixed mode, sharing)
+2026-02-25T05:36:32.762Z [INFO] [JdkEnvironment] Got real Java version: 21.0.10
+2026-02-25T05:36:32.763Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-21.0.10\\bin",
+  "version": "21"
+}
+2026-02-25T05:36:32.768Z [INFO] [Environment] Running command (Java 21): mvnw --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\yuwzho\.m2\wrapper\dists\apache-maven-3.9.9\977a63e90f436cd6ade95b4c0e10c20c
+Java version: 21.0.10, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-21.0.10
+Default locale: en_US, platform encoding: UTF-8
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-02-25T05:36:34.279Z [INFO] Real build tool version: 3.9.9
+2026-02-25T05:36:34.280Z [INFO] Build tool: {
+  "name": "mvnw",
+  "path": ".",
+  "version": "3.9.9"
+}
+2026-02-25T05:36:34.280Z [INFO] Project config: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": "3.9.9"
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk-21.0.10\\bin",
+    "version": "21",
+    "name": "java"
+  },
+  "name": "asset-manager-showpune-fork",
+  "dir": "D:\\code\\ai\\samples\\repos\\asset-manager-showpune-fork"
+}
+2026-02-25T05:36:34.280Z [INFO] Project configuration initialized: {
+  "buildTool": {
+    "path": ".",
+    "name": "mvnw",
+    "version": "3.9.9"
+  },
+  "jdk": {
+    "path": "C:\\Program Files\\Java\\jdk-21.0.10\\bin",
+    "version": "21",
+    "name": "java"
+  },
+  "name": "asset-manager-showpune-fork",
+  "dir": "D:\\code\\ai\\samples\\repos\\asset-manager-showpune-fork"
+}
+2026-02-25T05:36:34.281Z [INFO] Initializing upgrade goals...
+2026-02-25T05:36:34.286Z [INFO] [Environment] Running command (Java 21): mvnw dependency:tree -B
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] assets-manager-parent                                              [pom]
+[INFO] assets-manager-web                                                 [jar]
+[INFO] assets-manager-worker                                              [jar]
+[INFO] 
+[INFO] -----------< com.microsoft.migration:assets-manager-parent >------------
+[INFO] Building assets-manager-parent 0.0.1-SNAPSHOT                      [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:tree (default-cli) @ assets-manager-parent ---
+[INFO] com.microsoft.migration:assets-manager-parent:pom:0.0.1-SNAPSHOT
+[INFO] 
+[INFO] -------------< com.microsoft.migration:assets-manager-web >-------------
+[INFO] Building assets-manager-web 0.0.1-SNAPSHOT                         [2/3]
+[INFO]   from web\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:tree (default-cli) @ assets-manager-web ---
+[INFO] com.microsoft.migration:assets-manager-web:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter-thymeleaf:jar:3.2.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter:jar:3.2.1:compile
+[INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:3.2.1:compile
+[INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.4.14:compile
+[INFO] |  |  |  |  \- ch.qos.logback:logback-core:jar:1.4.14:compile
+[INFO] |  |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.21.1:compile
+[INFO] |  |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.21.1:compile
+[INFO] |  |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.9:compile
+[INFO] |  |  +- jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile
+[INFO] |  |  \- org.yaml:snakeyaml:jar:2.2:compile
+[INFO] |  \- org.thymeleaf:thymeleaf-spring6:jar:3.1.2.RELEASE:compile
+[INFO] |     +- org.thymeleaf:thymeleaf:jar:3.1.2.RELEASE:compile
+[INFO] |     |  +- org.attoparser:attoparser:jar:2.0.7.RELEASE:compile
+[INFO] |     |  \- org.unbescape:unbescape:jar:1.1.6.RELEASE:compile
+[INFO] |     \- org.slf4j:slf4j-api:jar:2.0.9:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:3.2.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-json:jar:3.2.1:compile
+[INFO] |  |  +- com.fasterxml.jackson.core:jackson-databind:jar:2.15.3:compile
+[INFO] |  |  |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.15.3:compile
+[INFO] |  |  |  \- com.fasterxml.jackson.core:jackson-core:jar:2.15.3:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jdk8:jar:2.15.3:compile
+[INFO] |  |  +- com.fasterxml.jackson.datatype:jackson-datatype-jsr310:jar:2.15.3:compile
+[INFO] |  |  \- com.fasterxml.jackson.module:jackson-module-parameter-names:jar:2.15.3:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-tomcat:jar:3.2.1:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-core:jar:10.1.17:compile
+[INFO] |  |  +- org.apache.tomcat.embed:tomcat-embed-el:jar:10.1.17:compile
+[INFO] |  |  \- org.apache.tomcat.embed:tomcat-embed-websocket:jar:10.1.17:compile
+[INFO] |  +- org.springframework:spring-web:jar:6.1.2:compile
+[INFO] |  |  +- org.springframework:spring-beans:jar:6.1.2:compile
+[INFO] |  |  \- io.micrometer:micrometer-observation:jar:1.12.1:compile
+[INFO] |  |     \- io.micrometer:micrometer-commons:jar:1.12.1:compile
+[INFO] |  \- org.springframework:spring-webmvc:jar:6.1.2:compile
+[INFO] |     +- org.springframework:spring-aop:jar:6.1.2:compile
+[INFO] |     +- org.springframework:spring-context:jar:6.1.2:compile
+[INFO] |     \- org.springframework:spring-expression:jar:6.1.2:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-amqp:jar:3.2.1:compile
+[INFO] |  +- org.springframework:spring-messaging:jar:6.1.2:compile
+[INFO] |  \- org.springframework.amqp:spring-rabbit:jar:3.1.1:compile
+[INFO] |     +- org.springframework.amqp:spring-amqp:jar:3.1.1:compile
+[INFO] |     |  \- org.springframework.retry:spring-retry:jar:2.0.5:compile
+[INFO] |     +- com.rabbitmq:amqp-client:jar:5.19.0:compile
+[INFO] |     \- org.springframework:spring-tx:jar:6.1.2:compile
+[INFO] +- software.amazon.awssdk:s3:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-xml-protocol:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:aws-query-protocol:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:protocol-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:arns:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:profiles:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:crt-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:identity-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-spi:jar:2.25.13:compile
+[INFO] |  |  \- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-aws:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:sdk-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:auth:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.eventstream:eventstream:jar:1.0.1:compile
+[INFO] |  +- software.amazon.awssdk:http-client-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:regions:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:annotations:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:utils:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:metrics-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:json-utils:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:third-party-jackson-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:endpoints-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:apache-client:jar:2.25.13:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.13:runtime
+[INFO] |  |  |  \- commons-logging:commons-logging:jar:1.2:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:runtime
+[INFO] |  |  \- commons-codec:commons-codec:jar:1.16.0:runtime
+[INFO] |  \- software.amazon.awssdk:netty-nio-client:jar:2.25.13:runtime
+[INFO] |     +- io.netty:netty-codec-http:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-codec-http2:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-codec:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-transport:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-common:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-buffer:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-handler:jar:4.1.104.Final:runtime
+[INFO] |     |  \- io.netty:netty-transport-native-unix-common:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-transport-classes-epoll:jar:4.1.104.Final:runtime
+[INFO] |     \- io.netty:netty-resolver:jar:4.1.104.Final:runtime
+[INFO] +- org.springframework.boot:spring-boot-devtools:jar:3.2.1:runtime
+[INFO] |  +- org.springframework.boot:spring-boot:jar:3.2.1:compile
+[INFO] |  \- org.springframework.boot:spring-boot-autoconfigure:jar:3.2.1:compile
+[INFO] +- org.springframework.boot:spring-boot-configuration-processor:jar:3.2.1:compile
+[INFO] +- org.projectlombok:lombok:jar:1.18.30:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:3.2.1:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:3.2.1:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:3.2.1:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.8.0:test
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.1:runtime
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:2.1.2:runtime
+[INFO] |  +- net.minidev:json-smart:jar:2.5.0:test
+[INFO] |  |  \- net.minidev:accessors-smart:jar:2.5.0:test
+[INFO] |  |     \- org.ow2.asm:asm:jar:9.3:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.24.2:test
+[INFO] |  |  \- net.bytebuddy:byte-buddy:jar:1.14.10:runtime
+[INFO] |  +- org.awaitility:awaitility:jar:4.2.0:test
+[INFO] |  +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter:jar:5.10.1:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-api:jar:5.10.1:test
+[INFO] |  |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |  |  |  +- org.junit.platform:junit-platform-commons:jar:1.10.1:test
+[INFO] |  |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-params:jar:5.10.1:test
+[INFO] |  |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.10.1:test
+[INFO] |  |     \- org.junit.platform:junit-platform-engine:jar:1.10.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:5.7.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.14.10:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:3.3:test
+[INFO] |  +- org.mockito:mockito-junit-jupiter:jar:5.7.0:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.1:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-core:jar:6.1.2:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:6.1.2:compile
+[INFO] |  +- org.springframework:spring-test:jar:6.1.2:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.9.1:test
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:3.2.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-aop:jar:3.2.1:compile
+[INFO] |  |  \- org.aspectj:aspectjweaver:jar:1.9.21:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:3.2.1:compile
+[INFO] |  |  +- com.zaxxer:HikariCP:jar:5.0.1:compile
+[INFO] |  |  \- org.springframework:spring-jdbc:jar:6.1.2:compile
+[INFO] |  +- org.hibernate.orm:hibernate-core:jar:6.4.1.Final:compile
+[INFO] |  |  +- jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile
+[INFO] |  |  +- jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.5.3.Final:runtime
+[INFO] |  |  +- org.hibernate.common:hibernate-commons-annotations:jar:6.0.6.Final:runtime
+[INFO] |  |  +- io.smallrye:jandex:jar:3.1.2:runtime
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.6.0:runtime
+[INFO] |  |  +- org.glassfish.jaxb:jaxb-runtime:jar:4.0.4:runtime
+[INFO] |  |  |  \- org.glassfish.jaxb:jaxb-core:jar:4.0.4:runtime
+[INFO] |  |  |     +- org.eclipse.angus:angus-activation:jar:2.0.1:runtime
+[INFO] |  |  |     +- org.glassfish.jaxb:txw2:jar:4.0.4:runtime
+[INFO] |  |  |     \- com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime
+[INFO] |  |  +- jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime
+[INFO] |  |  \- org.antlr:antlr4-runtime:jar:4.13.0:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:3.2.1:compile
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:3.2.1:compile
+[INFO] |  |  \- org.springframework:spring-orm:jar:6.1.2:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:6.1.2:compile
+[INFO] +- org.postgresql:postgresql:jar:42.6.0:runtime
+[INFO] |  \- org.checkerframework:checker-qual:jar:3.31.0:runtime
+[INFO] \- com.h2database:h2:jar:2.2.224:test
+[INFO] 
+[INFO] -----------< com.microsoft.migration:assets-manager-worker >------------
+[INFO] Building assets-manager-worker 0.0.1-SNAPSHOT                      [3/3]
+[INFO]   from worker\pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- dependency:3.6.1:tree (default-cli) @ assets-manager-worker ---
+[INFO] com.microsoft.migration:assets-manager-worker:jar:0.0.1-SNAPSHOT
+[INFO] +- org.springframework.boot:spring-boot-starter:jar:3.2.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot:jar:3.2.1:compile
+[INFO] |  |  \- org.springframework:spring-context:jar:6.1.2:compile
+[INFO] |  |     \- org.springframework:spring-expression:jar:6.1.2:compile
+[INFO] |  +- org.springframework.boot:spring-boot-autoconfigure:jar:3.2.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-logging:jar:3.2.1:compile
+[INFO] |  |  +- ch.qos.logback:logback-classic:jar:1.4.14:compile
+[INFO] |  |  |  \- ch.qos.logback:logback-core:jar:1.4.14:compile
+[INFO] |  |  +- org.apache.logging.log4j:log4j-to-slf4j:jar:2.21.1:compile
+[INFO] |  |  |  \- org.apache.logging.log4j:log4j-api:jar:2.21.1:compile
+[INFO] |  |  \- org.slf4j:jul-to-slf4j:jar:2.0.9:compile
+[INFO] |  +- jakarta.annotation:jakarta.annotation-api:jar:2.1.1:compile
+[INFO] |  +- org.springframework:spring-core:jar:6.1.2:compile
+[INFO] |  |  \- org.springframework:spring-jcl:jar:6.1.2:compile
+[INFO] |  \- org.yaml:snakeyaml:jar:2.2:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-amqp:jar:3.2.1:compile
+[INFO] |  +- org.springframework:spring-messaging:jar:6.1.2:compile
+[INFO] |  |  \- org.springframework:spring-beans:jar:6.1.2:compile
+[INFO] |  \- org.springframework.amqp:spring-rabbit:jar:3.1.1:compile
+[INFO] |     +- org.springframework.amqp:spring-amqp:jar:3.1.1:compile
+[INFO] |     |  \- org.springframework.retry:spring-retry:jar:2.0.5:compile
+[INFO] |     +- com.rabbitmq:amqp-client:jar:5.19.0:compile
+[INFO] |     +- org.springframework:spring-tx:jar:6.1.2:compile
+[INFO] |     \- io.micrometer:micrometer-observation:jar:1.12.1:compile
+[INFO] |        \- io.micrometer:micrometer-commons:jar:1.12.1:compile
+[INFO] +- software.amazon.awssdk:s3:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-xml-protocol:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:aws-query-protocol:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:protocol-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:arns:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:profiles:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:crt-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:identity-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-spi:jar:2.25.13:compile
+[INFO] |  |  \- org.reactivestreams:reactive-streams:jar:1.0.4:compile
+[INFO] |  +- software.amazon.awssdk:http-auth-aws:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:checksums-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:sdk-core:jar:2.25.13:compile
+[INFO] |  |  \- org.slf4j:slf4j-api:jar:2.0.9:compile
+[INFO] |  +- software.amazon.awssdk:auth:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.eventstream:eventstream:jar:1.0.1:compile
+[INFO] |  +- software.amazon.awssdk:http-client-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:regions:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:annotations:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:utils:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:aws-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:metrics-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:json-utils:jar:2.25.13:compile
+[INFO] |  |  \- software.amazon.awssdk:third-party-jackson-core:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:endpoints-spi:jar:2.25.13:compile
+[INFO] |  +- software.amazon.awssdk:apache-client:jar:2.25.13:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpclient:jar:4.5.13:runtime
+[INFO] |  |  |  \- commons-logging:commons-logging:jar:1.2:runtime
+[INFO] |  |  +- org.apache.httpcomponents:httpcore:jar:4.4.16:runtime
+[INFO] |  |  \- commons-codec:commons-codec:jar:1.16.0:runtime
+[INFO] |  \- software.amazon.awssdk:netty-nio-client:jar:2.25.13:runtime
+[INFO] |     +- io.netty:netty-codec-http:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-codec-http2:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-codec:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-transport:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-common:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-buffer:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-handler:jar:4.1.104.Final:runtime
+[INFO] |     |  \- io.netty:netty-transport-native-unix-common:jar:4.1.104.Final:runtime
+[INFO] |     +- io.netty:netty-transport-classes-epoll:jar:4.1.104.Final:runtime
+[INFO] |     \- io.netty:netty-resolver:jar:4.1.104.Final:runtime
+[INFO] +- org.projectlombok:lombok:jar:1.18.30:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-test:jar:3.2.1:test
+[INFO] |  +- org.springframework.boot:spring-boot-test:jar:3.2.1:test
+[INFO] |  +- org.springframework.boot:spring-boot-test-autoconfigure:jar:3.2.1:test
+[INFO] |  +- com.jayway.jsonpath:json-path:jar:2.8.0:test
+[INFO] |  +- jakarta.xml.bind:jakarta.xml.bind-api:jar:4.0.1:runtime
+[INFO] |  |  \- jakarta.activation:jakarta.activation-api:jar:2.1.2:runtime
+[INFO] |  +- net.minidev:json-smart:jar:2.5.0:test
+[INFO] |  |  \- net.minidev:accessors-smart:jar:2.5.0:test
+[INFO] |  |     \- org.ow2.asm:asm:jar:9.3:test
+[INFO] |  +- org.assertj:assertj-core:jar:3.24.2:test
+[INFO] |  |  \- net.bytebuddy:byte-buddy:jar:1.14.10:runtime
+[INFO] |  +- org.awaitility:awaitility:jar:4.2.0:test
+[INFO] |  +- org.hamcrest:hamcrest:jar:2.2:test
+[INFO] |  +- org.junit.jupiter:junit-jupiter:jar:5.10.1:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-api:jar:5.10.1:test
+[INFO] |  |  |  +- org.opentest4j:opentest4j:jar:1.3.0:test
+[INFO] |  |  |  +- org.junit.platform:junit-platform-commons:jar:1.10.1:test
+[INFO] |  |  |  \- org.apiguardian:apiguardian-api:jar:1.1.2:test
+[INFO] |  |  +- org.junit.jupiter:junit-jupiter-params:jar:5.10.1:test
+[INFO] |  |  \- org.junit.jupiter:junit-jupiter-engine:jar:5.10.1:test
+[INFO] |  |     \- org.junit.platform:junit-platform-engine:jar:1.10.1:test
+[INFO] |  +- org.mockito:mockito-core:jar:5.7.0:test
+[INFO] |  |  +- net.bytebuddy:byte-buddy-agent:jar:1.14.10:test
+[INFO] |  |  \- org.objenesis:objenesis:jar:3.3:test
+[INFO] |  +- org.mockito:mockito-junit-jupiter:jar:5.7.0:test
+[INFO] |  +- org.skyscreamer:jsonassert:jar:1.5.1:test
+[INFO] |  |  \- com.vaadin.external.google:android-json:jar:0.0.20131108.vaadin1:test
+[INFO] |  +- org.springframework:spring-test:jar:6.1.2:test
+[INFO] |  \- org.xmlunit:xmlunit-core:jar:2.9.1:test
+[INFO] +- com.fasterxml.jackson.core:jackson-databind:jar:2.15.3:compile
+[INFO] |  +- com.fasterxml.jackson.core:jackson-annotations:jar:2.15.3:compile
+[INFO] |  \- com.fasterxml.jackson.core:jackson-core:jar:2.15.3:compile
+[INFO] +- org.springframework.boot:spring-boot-starter-data-jpa:jar:3.2.1:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-aop:jar:3.2.1:compile
+[INFO] |  |  +- org.springframework:spring-aop:jar:6.1.2:compile
+[INFO] |  |  \- org.aspectj:aspectjweaver:jar:1.9.21:compile
+[INFO] |  +- org.springframework.boot:spring-boot-starter-jdbc:jar:3.2.1:compile
+[INFO] |  |  +- com.zaxxer:HikariCP:jar:5.0.1:compile
+[INFO] |  |  \- org.springframework:spring-jdbc:jar:6.1.2:compile
+[INFO] |  +- org.hibernate.orm:hibernate-core:jar:6.4.1.Final:compile
+[INFO] |  |  +- jakarta.persistence:jakarta.persistence-api:jar:3.1.0:compile
+[INFO] |  |  +- jakarta.transaction:jakarta.transaction-api:jar:2.0.1:compile
+[INFO] |  |  +- org.jboss.logging:jboss-logging:jar:3.5.3.Final:runtime
+[INFO] |  |  +- org.hibernate.common:hibernate-commons-annotations:jar:6.0.6.Final:runtime
+[INFO] |  |  +- io.smallrye:jandex:jar:3.1.2:runtime
+[INFO] |  |  +- com.fasterxml:classmate:jar:1.6.0:runtime
+[INFO] |  |  +- org.glassfish.jaxb:jaxb-runtime:jar:4.0.4:runtime
+[INFO] |  |  |  \- org.glassfish.jaxb:jaxb-core:jar:4.0.4:runtime
+[INFO] |  |  |     +- org.eclipse.angus:angus-activation:jar:2.0.1:runtime
+[INFO] |  |  |     +- org.glassfish.jaxb:txw2:jar:4.0.4:runtime
+[INFO] |  |  |     \- com.sun.istack:istack-commons-runtime:jar:4.1.2:runtime
+[INFO] |  |  +- jakarta.inject:jakarta.inject-api:jar:2.0.1:runtime
+[INFO] |  |  \- org.antlr:antlr4-runtime:jar:4.13.0:compile
+[INFO] |  +- org.springframework.data:spring-data-jpa:jar:3.2.1:compile
+[INFO] |  |  +- org.springframework.data:spring-data-commons:jar:3.2.1:compile
+[INFO] |  |  \- org.springframework:spring-orm:jar:6.1.2:compile
+[INFO] |  \- org.springframework:spring-aspects:jar:6.1.2:compile
+[INFO] \- org.postgresql:postgresql:jar:42.6.0:runtime
+[INFO]    \- org.checkerframework:checker-qual:jar:3.31.0:runtime
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for assets-manager-parent 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] assets-manager-parent .............................. SUCCESS [  1.370 s]
+[INFO] assets-manager-web ................................. SUCCESS [  0.583 s]
+[INFO] assets-manager-worker .............................. SUCCESS [  0.032 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  2.667 s
+[INFO] Finished at: 2026-02-25T13:36:39+08:00
+[INFO] ------------------------------------------------------------------------
+2026-02-25T05:36:39.969Z [INFO] [MavenBuildTool] Successfully got dependency tree of D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:36:39.969Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\asset-manager-showpune-fork from pom.xml
+2026-02-25T05:36:39.970Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:36:39.970Z [INFO] [MavenBuildTool] Getting all module coordinates of D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:36:39.971Z [INFO] [MavenBuildTool] Getting effective POMs of D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-02-25T05:36:39.971Z [INFO] [Environment] Running command (Java 21): mvnw help:effective-pom -Doutput=effective-pom-027d06a6-8491-4d37-a71d-f630a9f6cfe1.log
+[INFO] Scanning for projects...
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Build Order:
+[INFO] 
+[INFO] assets-manager-parent                                              [pom]
+[INFO] assets-manager-web                                                 [jar]
+[INFO] assets-manager-worker                                              [jar]
+[INFO] 
+[INFO] -----------< com.microsoft.migration:assets-manager-parent >------------
+[INFO] Building assets-manager-parent 0.0.1-SNAPSHOT                      [1/3]
+[INFO]   from pom.xml
+[INFO] --------------------------------[ pom ]---------------------------------
+[INFO] 
+[INFO] --- help:3.4.0:effective-pom (default-cli) @ assets-manager-parent ---
+[INFO] Effective-POM written to: D:\code\ai\samples\repos\asset-manager-showpune-fork\effective-pom-027d06a6-8491-4d37-a71d-f630a9f6cfe1.log
+[INFO] ------------------------------------------------------------------------
+[INFO] Reactor Summary for assets-manager-parent 0.0.1-SNAPSHOT:
+[INFO] 
+[INFO] assets-manager-parent .............................. SUCCESS [  0.616 s]
+[INFO] assets-manager-web ................................. SKIPPED
+[INFO] assets-manager-worker .............................. SKIPPED
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  1.247 s
+[INFO] Finished at: 2026-02-25T13:36:43+08:00
+[INFO] ------------------------------------------------------------------------
+2026-02-25T05:36:43.900Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\web\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\worker\pom.xml
+2026-02-25T05:36:43.902Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml: 21
+2026-02-25T05:36:43.902Z [INFO] Source Java version: 21
+2026-02-25T05:36:43.903Z [INFO] validateAndUpdateTargets, targets: [object Object]
+2026-02-25T05:36:43.904Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Boot
+2026-02-25T05:36:43.904Z [WARN] No source dependencies found for Spring Framework. Skipping target dependency validation
+2026-02-25T05:36:43.905Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Framework
+2026-02-25T05:36:43.905Z [WARN] No source dependencies found for Spring Security. Skipping target dependency validation
+2026-02-25T05:36:43.906Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Security
+2026-02-25T05:36:43.906Z [WARN] No source dependencies found for Jakarta EE. Skipping target dependency validation
+2026-02-25T05:36:43.907Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Jakarta EE
+2026-02-25T05:36:43.907Z [WARN] No source dependencies found for JUnit. Skipping target dependency validation
+2026-02-25T05:36:43.908Z [INFO] validateAndUpdateTargets, targets: [object Object], group:JUnit
+2026-02-25T05:36:43.909Z [INFO] No target dependencies found for Java. Skipping target dependency validation
+2026-02-25T05:36:43.909Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Java
+2026-02-25T05:36:43.910Z [INFO] validateAndUpdateTargets, userTargets: [object Object]
+2026-02-25T05:36:43.911Z [INFO] initUpgradeGoal, targetDeps: [object Object]
+2026-02-25T05:36:43.912Z [INFO] Upgrade goal initialized: [
+  {
+    "name": "Spring Boot",
+    "groupId": "org.springframework.boot",
+    "artifactId": "*",
+    "version": "3.4.x",
+    "dependencies": [
+      {
+        "groupId": "java",
+        "artifactId": "*",
+        "version": ">=17 <=24"
+      }
+    ],
+    "recipes": [
+      {
+        "id": "com.microsoft.java.UpgradeToSpringBoot_3_4",
+        "name": "Upgrading from Spring Boot 3.3 to 3.4",
+        "description": "Upgrading from Spring Boot 3.3 to 3.4 using AI.",
+        "content": "- Refer to [Upgrading to Spring Boot 3.4 from 3.3](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.4-Release-Notes#upgrading-from-spring-boot-33) for more instructions about upgrading to Spring Boot 3.4 from 3.3.",
+        "url": "https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.4-Release-Notes"
+      }
+    ],
+    "supportedSources": [
+      {
+        "groupId": "org.springframework.boot",
+        "artifactId": "*",
+        "version": "3.3.x"
+      },
+      {
+        "name": "Spring Boot",
+        "groupId": "org.springframework.boot",
+        "artifactId": "*",
+        "version": "3.3.x",
+        "dependencies": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": ">=17 <=23"
+          }
+        ],
+        "recipes": [
+          {
+            "id": "com.microsoft.java.UpgradeToSpringBoot_3_3",
+            "name": "Upgrade Spring Boot to 3.3",
+            "description": "Migrate low-level to Spring Boot 3.3 directly.",
+            "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_3",
+            "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.3 from any previous version.\n"
+          }
+        ],
+        "supportedSources": [
+          {
+            "groupId": "org.springframework.boot",
+            "artifactId": "*",
+            "version": "<=3.3.12"
+          },
+          {
+            "name": "Spring Boot",
+            "groupId": "org.springframework.boot",
+            "artifactId": "*",
+            "version": "2.7.x",
+            "dependencies": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=8 <=21"
+              }
+            ],
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+                "name": "Upgrade Spring Boot to 2.7",
+                "description": "Migrate low-level to Spring Boot 2.7 directly.",
+                "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+                "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "<=2.7.18"
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "2.7.x"
+              },
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "8"
+              },
+              {
+                "groupId": "org.springframework",
+                "artifactId": "*",
+                "version": "5.3.x"
+              }
+            ]
+          },
+          {
+            "name": "Spring Boot",
+            "groupId": "org.springframework.boot",
+            "artifactId": "*",
+            "version": "3.2.x",
+            "dependencies": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=17 <=21"
+              }
+            ],
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToSpringBoot_3_2",
+                "name": "Upgrade Spring Boot to 3.2",
+                "description": "Migrate low-level to Spring Boot 3.2 directly.",
+                "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_2",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.2 from any previous version.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "<=3.2.12"
+              },
+              {
+                "name": "Spring Boot",
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "2.7.x",
+                "dependencies": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": ">=8 <=21"
+                  }
+                ],
+                "recipes": [
+                  {
+                    "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+                    "name": "Upgrade Spring Boot to 2.7",
+                    "description": "Migrate low-level to Spring Boot 2.7 directly.",
+                    "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+                    "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+                  }
+                ],
+                "supportedSources": [
+                  {
+                    "groupId": "org.springframework.boot",
+                    "artifactId": "*",
+                    "version": "<=2.7.18"
+                  }
+                ],
+                "effects": [
+                  {
+                    "groupId": "org.springframework.boot",
+                    "artifactId": "*",
+                    "version": "2.7.x"
+                  },
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": "8"
+                  },
+                  {
+                    "groupId": "org.springframework",
+                    "artifactId": "*",
+                    "version": "5.3.x"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "3.2.x"
+              },
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "17"
+              },
+              {
+                "groupId": "org.springframework",
+                "artifactId": "*",
+                "version": "6.1.x"
+              }
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "groupId": "org.springframework.boot",
+            "artifactId": "*",
+            "version": "3.3.x"
+          },
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": "17"
+          },
+          {
+            "groupId": "org.springframework",
+            "artifactId": "*",
+            "version": "6.1.x"
+          }
+        ]
+      }
+    ],
+    "effects": [
+      {
+        "groupId": "org.springframework.boot",
+        "artifactId": "*",
+        "version": "3.4.x"
+      }
+    ]
+  }
+]
+2026-02-25T05:36:43.912Z [INFO] Initializing upgrade options...
+2026-02-25T05:36:43.913Z [INFO] Source Java version: 21
+2026-02-25T05:36:43.913Z [INFO] Source JDK: {"name":"java","path":"C:\\Program Files\\Java\\jdk-21.0.10\\bin","version":"21"}
+2026-02-25T05:36:43.914Z [INFO] Target Java version: 21
+2026-02-25T05:36:43.914Z [INFO] Target JDK: {"name":"java","path":"C:\\Program Files\\Java\\jdk-21.0.10\\bin","version":"21"}
+2026-02-25T05:36:43.915Z [INFO] Maven project detected.
+2026-02-25T05:36:43.916Z [INFO] Build tool type: mvnw
+2026-02-25T05:36:43.916Z [INFO] Build tool: {"name":"mvnw","path":".","version":""}
+2026-02-25T05:36:43.917Z [INFO] Working branch: appmod/java-upgrade-20260225053632
+2026-02-25T05:36:43.917Z [INFO] Upgrade options initialized: {
+  "target": {
+    "jdk": {
+      "name": "java",
+      "path": "C:\\Program Files\\Java\\jdk-21.0.10\\bin",
+      "version": "21"
+    },
+    "dependencies": [
+      {
+        "name": "Spring Boot",
+        "groupId": "org.springframework.boot",
+        "artifactId": "*",
+        "version": "3.4.x",
+        "dependencies": [
+          {
+            "groupId": "java",
+            "artifactId": "*",
+            "version": ">=17 <=24"
+          }
+        ],
+        "recipes": [
+          {
+            "id": "com.microsoft.java.UpgradeToSpringBoot_3_4",
+            "name": "Upgrading from Spring Boot 3.3 to 3.4",
+            "description": "Upgrading from Spring Boot 3.3 to 3.4 using AI.",
+            "content": "- Refer to [Upgrading to Spring Boot 3.4 from 3.3](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.4-Release-Notes#upgrading-from-spring-boot-33) for more instructions about upgrading to Spring Boot 3.4 from 3.3.",
+            "url": "https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.4-Release-Notes"
+          }
+        ],
+        "supportedSources": [
+          {
+            "groupId": "org.springframework.boot",
+            "artifactId": "*",
+            "version": "3.3.x"
+          },
+          {
+            "name": "Spring Boot",
+            "groupId": "org.springframework.boot",
+            "artifactId": "*",
+            "version": "3.3.x",
+            "dependencies": [
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": ">=17 <=23"
+              }
+            ],
+            "recipes": [
+              {
+                "id": "com.microsoft.java.UpgradeToSpringBoot_3_3",
+                "name": "Upgrade Spring Boot to 3.3",
+                "description": "Migrate low-level to Spring Boot 3.3 directly.",
+                "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_3",
+                "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.3 from any previous version.\n"
+              }
+            ],
+            "supportedSources": [
+              {
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "<=3.3.12"
+              },
+              {
+                "name": "Spring Boot",
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "2.7.x",
+                "dependencies": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": ">=8 <=21"
+                  }
+                ],
+                "recipes": [
+                  {
+                    "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+                    "name": "Upgrade Spring Boot to 2.7",
+                    "description": "Migrate low-level to Spring Boot 2.7 directly.",
+                    "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+                    "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+                  }
+                ],
+                "supportedSources": [
+                  {
+                    "groupId": "org.springframework.boot",
+                    "artifactId": "*",
+                    "version": "<=2.7.18"
+                  }
+                ],
+                "effects": [
+                  {
+                    "groupId": "org.springframework.boot",
+                    "artifactId": "*",
+                    "version": "2.7.x"
+                  },
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": "8"
+                  },
+                  {
+                    "groupId": "org.springframework",
+                    "artifactId": "*",
+                    "version": "5.3.x"
+                  }
+                ]
+              },
+              {
+                "name": "Spring Boot",
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "3.2.x",
+                "dependencies": [
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": ">=17 <=21"
+                  }
+                ],
+                "recipes": [
+                  {
+                    "id": "com.microsoft.java.UpgradeToSpringBoot_3_2",
+                    "name": "Upgrade Spring Boot to 3.2",
+                    "description": "Migrate low-level to Spring Boot 3.2 directly.",
+                    "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_2",
+                    "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.2 from any previous version.\n"
+                  }
+                ],
+                "supportedSources": [
+                  {
+                    "groupId": "org.springframework.boot",
+                    "artifactId": "*",
+                    "version": "<=3.2.12"
+                  },
+                  {
+                    "name": "Spring Boot",
+                    "groupId": "org.springframework.boot",
+                    "artifactId": "*",
+                    "version": "2.7.x",
+                    "dependencies": [
+                      {
+                        "groupId": "java",
+                        "artifactId": "*",
+                        "version": ">=8 <=21"
+                      }
+                    ],
+                    "recipes": [
+                      {
+                        "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+                        "name": "Upgrade Spring Boot to 2.7",
+                        "description": "Migrate low-level to Spring Boot 2.7 directly.",
+                        "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+                        "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+                      }
+                    ],
+                    "supportedSources": [
+                      {
+                        "groupId": "org.springframework.boot",
+                        "artifactId": "*",
+                        "version": "<=2.7.18"
+                      }
+                    ],
+                    "effects": [
+                      {
+                        "groupId": "org.springframework.boot",
+                        "artifactId": "*",
+                        "version": "2.7.x"
+                      },
+                      {
+                        "groupId": "java",
+                        "artifactId": "*",
+                        "version": "8"
+                      },
+                      {
+                        "groupId": "org.springframework",
+                        "artifactId": "*",
+                        "version": "5.3.x"
+                      }
+                    ]
+                  }
+                ],
+                "effects": [
+                  {
+                    "groupId": "org.springframework.boot",
+                    "artifactId": "*",
+                    "version": "3.2.x"
+                  },
+                  {
+                    "groupId": "java",
+                    "artifactId": "*",
+                    "version": "17"
+                  },
+                  {
+                    "groupId": "org.springframework",
+                    "artifactId": "*",
+                    "version": "6.1.x"
+                  }
+                ]
+              }
+            ],
+            "effects": [
+              {
+                "groupId": "org.springframework.boot",
+                "artifactId": "*",
+                "version": "3.3.x"
+              },
+              {
+                "groupId": "java",
+                "artifactId": "*",
+                "version": "17"
+              },
+              {
+                "groupId": "org.springframework",
+                "artifactId": "*",
+                "version": "6.1.x"
+              }
+            ]
+          }
+        ],
+        "effects": [
+          {
+            "groupId": "org.springframework.boot",
+            "artifactId": "*",
+            "version": "3.4.x"
+          }
+        ]
+      }
+    ],
+    "buildTool": {
+      "name": "mvnw",
+      "path": ".",
+      "version": ""
+    }
+  },
+  "guidelines": "",
+  "workingBranch": "appmod/java-upgrade-20260225053632",
+  "runTests": true
+}
+2026-02-25T05:36:43.918Z [INFO] Project dependencies loaded: [
+  "org.springframework.boot:spring-boot-starter-thymeleaf:3.2.1:jar",
+  "org.springframework.boot:spring-boot-starter-web:3.2.1:jar",
+  "org.springframework.boot:spring-boot-starter-amqp:3.2.1:jar",
+  "software.amazon.awssdk:s3:2.25.13:jar",
+  "org.springframework.boot:spring-boot-devtools:3.2.1:jar",
+  "org.springframework.boot:spring-boot-configuration-processor:3.2.1:jar",
+  "org.projectlombok:lombok:1.18.30:jar",
+  "org.springframework.boot:spring-boot-starter-test:3.2.1:jar",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.2.1:jar",
+  "org.postgresql:postgresql:42.6.0:jar",
+  "com.h2database:h2:2.2.224:jar",
+  "org.springframework.boot:spring-boot-starter:3.2.1:jar",
+  "org.springframework.boot:spring-boot-starter-amqp:3.2.1:jar",
+  "software.amazon.awssdk:s3:2.25.13:jar",
+  "org.projectlombok:lombok:1.18.30:jar",
+  "org.springframework.boot:spring-boot-starter-test:3.2.1:jar",
+  "com.fasterxml.jackson.core:jackson-databind:2.15.3:jar",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.2.1:jar",
+  "org.postgresql:postgresql:42.6.0:jar"
+]
+2026-02-25T05:36:43.919Z [INFO] Project modules loaded: [
+  "com.microsoft.migration:assets-manager-parent:0.0.1-SNAPSHOT",
+  "com.microsoft.migration:assets-manager-web:0.0.1-SNAPSHOT",
+  "com.microsoft.migration:assets-manager-worker:0.0.1-SNAPSHOT"
+]
+2026-02-25T05:36:43.920Z [INFO] done initializing context.
+2026-02-25T05:36:43.920Z [INFO] Source dependencies: [
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-thymeleaf",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-web",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-amqp",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "software.amazon.awssdk",
+    "artifactId": "s3",
+    "type": "jar",
+    "version": "2.25.13",
+    "scope": "compile",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-devtools",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "runtime",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-configuration-processor",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.projectlombok",
+    "artifactId": "lombok",
+    "type": "jar",
+    "version": "1.18.30",
+    "scope": "compile",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-test",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "test",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-data-jpa",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.postgresql",
+    "artifactId": "postgresql",
+    "type": "jar",
+    "version": "42.6.0",
+    "scope": "runtime",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "com.h2database",
+    "artifactId": "h2",
+    "type": "jar",
+    "version": "2.2.224",
+    "scope": "test",
+    "module": "assets-manager-web"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-amqp",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "software.amazon.awssdk",
+    "artifactId": "s3",
+    "type": "jar",
+    "version": "2.25.13",
+    "scope": "compile",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "org.projectlombok",
+    "artifactId": "lombok",
+    "type": "jar",
+    "version": "1.18.30",
+    "scope": "compile",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-test",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "test",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "com.fasterxml.jackson.core",
+    "artifactId": "jackson-databind",
+    "type": "jar",
+    "version": "2.15.3",
+    "scope": "compile",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "org.springframework.boot",
+    "artifactId": "spring-boot-starter-data-jpa",
+    "type": "jar",
+    "version": "3.2.1",
+    "scope": "compile",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "org.postgresql",
+    "artifactId": "postgresql",
+    "type": "jar",
+    "version": "42.6.0",
+    "scope": "runtime",
+    "module": "assets-manager-worker"
+  },
+  {
+    "groupId": "java",
+    "artifactId": "*",
+    "version": "21"
+  }
+]
+2026-02-25T05:36:43.921Z [INFO] validateAndUpdateTargets, targets: [object Object]
+2026-02-25T05:36:43.922Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Boot
+2026-02-25T05:36:43.922Z [WARN] No source dependencies found for Spring Framework. Skipping target dependency validation
+2026-02-25T05:36:43.923Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Framework
+2026-02-25T05:36:43.923Z [WARN] No source dependencies found for Spring Security. Skipping target dependency validation
+2026-02-25T05:36:43.924Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Security
+2026-02-25T05:36:43.924Z [WARN] No source dependencies found for Jakarta EE. Skipping target dependency validation
+2026-02-25T05:36:43.925Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Jakarta EE
+2026-02-25T05:36:43.925Z [WARN] No source dependencies found for JUnit. Skipping target dependency validation
+2026-02-25T05:36:43.925Z [INFO] validateAndUpdateTargets, targets: [object Object], group:JUnit
+2026-02-25T05:36:43.926Z [INFO] No target dependencies found for Java. Skipping target dependency validation
+2026-02-25T05:36:43.926Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Java
+2026-02-25T05:36:43.927Z [INFO] validateAndUpdateTargets, userTargets: [object Object]
+2026-02-25T05:36:43.928Z [INFO] validateAndUpdateTargets, targets: [object Object]
+2026-02-25T05:36:43.928Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Boot
+2026-02-25T05:36:43.929Z [WARN] No source dependencies found for Spring Framework. Skipping target dependency validation
+2026-02-25T05:36:43.929Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Framework
+2026-02-25T05:36:43.930Z [WARN] No source dependencies found for Spring Security. Skipping target dependency validation
+2026-02-25T05:36:43.930Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Spring Security
+2026-02-25T05:36:43.931Z [WARN] No source dependencies found for Jakarta EE. Skipping target dependency validation
+2026-02-25T05:36:43.931Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Jakarta EE
+2026-02-25T05:36:43.931Z [WARN] No source dependencies found for JUnit. Skipping target dependency validation
+2026-02-25T05:36:43.932Z [INFO] validateAndUpdateTargets, targets: [object Object], group:JUnit
+2026-02-25T05:36:43.932Z [INFO] No target dependencies found for Java. Skipping target dependency validation
+2026-02-25T05:36:43.933Z [INFO] validateAndUpdateTargets, targets: [object Object], group:Java
+2026-02-25T05:36:43.933Z [INFO] validateAndUpdateTargets, userTargets: [object Object]
+2026-02-25T05:36:43.935Z [INFO] Upgrade route: upgrade `Spring Boot` to *3.3.x* -> upgrade `Spring Boot` to *3.4.x* with oneStepOneFramework=false
+2026-02-25T05:36:43.935Z [INFO] Upgrade route planned: [
+  [
+    {
+      "name": "Spring Boot",
+      "groupId": "org.springframework.boot",
+      "artifactId": "*",
+      "version": "3.3.x",
+      "dependencies": [
+        {
+          "groupId": "java",
+          "artifactId": "*",
+          "version": ">=17 <=23"
+        }
+      ],
+      "recipes": [
+        {
+          "id": "com.microsoft.java.UpgradeToSpringBoot_3_3",
+          "name": "Upgrade Spring Boot to 3.3",
+          "description": "Migrate low-level to Spring Boot 3.3 directly.",
+          "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_3",
+          "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.3 from any previous version.\n"
+        }
+      ],
+      "supportedSources": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "*",
+          "version": "<=3.3.12"
+        },
+        {
+          "name": "Spring Boot",
+          "groupId": "org.springframework.boot",
+          "artifactId": "*",
+          "version": "2.7.x",
+          "dependencies": [
+            {
+              "groupId": "java",
+              "artifactId": "*",
+              "version": ">=8 <=21"
+            }
+          ],
+          "recipes": [
+            {
+              "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+              "name": "Upgrade Spring Boot to 2.7",
+              "description": "Migrate low-level to Spring Boot 2.7 directly.",
+              "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+              "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+            }
+          ],
+          "supportedSources": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "<=2.7.18"
+            }
+          ],
+          "effects": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "2.7.x"
+            },
+            {
+              "groupId": "java",
+              "artifactId": "*",
+              "version": "8"
+            },
+            {
+              "groupId": "org.springframework",
+              "artifactId": "*",
+              "version": "5.3.x"
+            }
+          ]
+        },
+        {
+          "name": "Spring Boot",
+          "groupId": "org.springframework.boot",
+          "artifactId": "*",
+          "version": "3.2.x",
+          "dependencies": [
+            {
+              "groupId": "java",
+              "artifactId": "*",
+              "version": ">=17 <=21"
+            }
+          ],
+          "recipes": [
+            {
+              "id": "com.microsoft.java.UpgradeToSpringBoot_3_2",
+              "name": "Upgrade Spring Boot to 3.2",
+              "description": "Migrate low-level to Spring Boot 3.2 directly.",
+              "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_2",
+              "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.2 from any previous version.\n"
+            }
+          ],
+          "supportedSources": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "<=3.2.12"
+            },
+            {
+              "name": "Spring Boot",
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "2.7.x",
+              "dependencies": [
+                {
+                  "groupId": "java",
+                  "artifactId": "*",
+                  "version": ">=8 <=21"
+                }
+              ],
+              "recipes": [
+                {
+                  "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+                  "name": "Upgrade Spring Boot to 2.7",
+                  "description": "Migrate low-level to Spring Boot 2.7 directly.",
+                  "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+                  "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+                }
+              ],
+              "supportedSources": [
+                {
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "*",
+                  "version": "<=2.7.18"
+                }
+              ],
+              "effects": [
+                {
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "*",
+                  "version": "2.7.x"
+                },
+                {
+                  "groupId": "java",
+                  "artifactId": "*",
+                  "version": "8"
+                },
+                {
+                  "groupId": "org.springframework",
+                  "artifactId": "*",
+                  "version": "5.3.x"
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "3.2.x"
+            },
+            {
+              "groupId": "java",
+              "artifactId": "*",
+              "version": "17"
+            },
+            {
+              "groupId": "org.springframework",
+              "artifactId": "*",
+              "version": "6.1.x"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "*",
+          "version": "3.3.x"
+        },
+        {
+          "groupId": "java",
+          "artifactId": "*",
+          "version": "17"
+        },
+        {
+          "groupId": "org.springframework",
+          "artifactId": "*",
+          "version": "6.1.x"
+        }
+      ]
+    }
+  ],
+  [
+    {
+      "name": "Spring Boot",
+      "groupId": "org.springframework.boot",
+      "artifactId": "*",
+      "version": "3.4.x",
+      "dependencies": [
+        {
+          "groupId": "java",
+          "artifactId": "*",
+          "version": ">=17 <=24"
+        }
+      ],
+      "recipes": [
+        {
+          "id": "com.microsoft.java.UpgradeToSpringBoot_3_4",
+          "name": "Upgrading from Spring Boot 3.3 to 3.4",
+          "description": "Upgrading from Spring Boot 3.3 to 3.4 using AI.",
+          "content": "- Refer to [Upgrading to Spring Boot 3.4 from 3.3](https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.4-Release-Notes#upgrading-from-spring-boot-33) for more instructions about upgrading to Spring Boot 3.4 from 3.3.",
+          "url": "https://github.com/spring-projects/spring-boot/wiki/Spring-Boot-3.4-Release-Notes"
+        }
+      ],
+      "supportedSources": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "*",
+          "version": "3.3.x"
+        },
+        {
+          "name": "Spring Boot",
+          "groupId": "org.springframework.boot",
+          "artifactId": "*",
+          "version": "3.3.x",
+          "dependencies": [
+            {
+              "groupId": "java",
+              "artifactId": "*",
+              "version": ">=17 <=23"
+            }
+          ],
+          "recipes": [
+            {
+              "id": "com.microsoft.java.UpgradeToSpringBoot_3_3",
+              "name": "Upgrade Spring Boot to 3.3",
+              "description": "Migrate low-level to Spring Boot 3.3 directly.",
+              "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_3",
+              "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_3` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.3 from any previous version.\n"
+            }
+          ],
+          "supportedSources": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "<=3.3.12"
+            },
+            {
+              "name": "Spring Boot",
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "2.7.x",
+              "dependencies": [
+                {
+                  "groupId": "java",
+                  "artifactId": "*",
+                  "version": ">=8 <=21"
+                }
+              ],
+              "recipes": [
+                {
+                  "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+                  "name": "Upgrade Spring Boot to 2.7",
+                  "description": "Migrate low-level to Spring Boot 2.7 directly.",
+                  "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+                  "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+                }
+              ],
+              "supportedSources": [
+                {
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "*",
+                  "version": "<=2.7.18"
+                }
+              ],
+              "effects": [
+                {
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "*",
+                  "version": "2.7.x"
+                },
+                {
+                  "groupId": "java",
+                  "artifactId": "*",
+                  "version": "8"
+                },
+                {
+                  "groupId": "org.springframework",
+                  "artifactId": "*",
+                  "version": "5.3.x"
+                }
+              ]
+            },
+            {
+              "name": "Spring Boot",
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "3.2.x",
+              "dependencies": [
+                {
+                  "groupId": "java",
+                  "artifactId": "*",
+                  "version": ">=17 <=21"
+                }
+              ],
+              "recipes": [
+                {
+                  "id": "com.microsoft.java.UpgradeToSpringBoot_3_2",
+                  "name": "Upgrade Spring Boot to 3.2",
+                  "description": "Migrate low-level to Spring Boot 3.2 directly.",
+                  "url": "https://docs.openrewrite.org/recipes/java/spring/boot3/upgradespringboot_3_2",
+                  "content": "\n- Apply OpenRewrite recipe `org.openrewrite.java.spring.boot3.UpgradeSpringBoot_3_2` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 3.2 from any previous version.\n"
+                }
+              ],
+              "supportedSources": [
+                {
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "*",
+                  "version": "<=3.2.12"
+                },
+                {
+                  "name": "Spring Boot",
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "*",
+                  "version": "2.7.x",
+                  "dependencies": [
+                    {
+                      "groupId": "java",
+                      "artifactId": "*",
+                      "version": ">=8 <=21"
+                    }
+                  ],
+                  "recipes": [
+                    {
+                      "id": "com.microsoft.java.UpgradeToSpringBoot_2_7",
+                      "name": "Upgrade Spring Boot to 2.7",
+                      "description": "Migrate low-level to Spring Boot 2.7 directly.",
+                      "url": "https://docs.openrewrite.org/recipes/java/spring/boot2/upgradespringboot_2_7",
+                      "content": "\n-  Apply OpenRewrite recipe `org.openrewrite.java.spring.boot2.UpgradeSpringBoot_2_7` in recipe lib `org.openrewrite.recipe:rewrite-spring:5.25.1` to make initial code changes for upgrading Spring Boot to 2.7 from any previous version.\n"
+                    }
+                  ],
+                  "supportedSources": [
+                    {
+                      "groupId": "org.springframework.boot",
+                      "artifactId": "*",
+                      "version": "<=2.7.18"
+                    }
+                  ],
+                  "effects": [
+                    {
+                      "groupId": "org.springframework.boot",
+                      "artifactId": "*",
+                      "version": "2.7.x"
+                    },
+                    {
+                      "groupId": "java",
+                      "artifactId": "*",
+                      "version": "8"
+                    },
+                    {
+                      "groupId": "org.springframework",
+                      "artifactId": "*",
+                      "version": "5.3.x"
+                    }
+                  ]
+                }
+              ],
+              "effects": [
+                {
+                  "groupId": "org.springframework.boot",
+                  "artifactId": "*",
+                  "version": "3.2.x"
+                },
+                {
+                  "groupId": "java",
+                  "artifactId": "*",
+                  "version": "17"
+                },
+                {
+                  "groupId": "org.springframework",
+                  "artifactId": "*",
+                  "version": "6.1.x"
+                }
+              ]
+            }
+          ],
+          "effects": [
+            {
+              "groupId": "org.springframework.boot",
+              "artifactId": "*",
+              "version": "3.3.x"
+            },
+            {
+              "groupId": "java",
+              "artifactId": "*",
+              "version": "17"
+            },
+            {
+              "groupId": "org.springframework",
+              "artifactId": "*",
+              "version": "6.1.x"
+            }
+          ]
+        }
+      ],
+      "effects": [
+        {
+          "groupId": "org.springframework.boot",
+          "artifactId": "*",
+          "version": "3.4.x"
+        }
+      ]
+    }
+  ]
+]
+2026-02-25T05:36:44.755Z [INFO] Upgrade plan written to D:\code\ai\samples\repos\asset-manager-showpune-fork\.github\java-upgrade\20260225053632\plan.md

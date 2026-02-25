@@ -1,0 +1,7 @@
+2026-02-25T05:53:54.038Z [INFO] [MavenBuildTool] Getting build errors of D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:53:54.039Z [INFO] [Environment] Running command (Java 17): mvnw clean test-compile -q -B -fn
+2026-02-25T05:54:05.616Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-02-25T05:54:05.617Z [INFO] [BaseBuildTool] Found 3 modules: ., web, worker
+2026-02-25T05:54:05.631Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-02-25T05:54:05.632Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:54:05.632Z [INFO] [Environment] Running command (Java 17): mvnw clean -q -B -fn

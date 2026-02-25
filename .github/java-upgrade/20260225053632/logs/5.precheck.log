@@ -1,0 +1,225 @@
+2026-02-25T05:37:25.230Z [INFO] Prechecking project asset-manager-showpune-fork...
+2026-02-25T05:37:25.232Z [INFO] Prechecking build status...
+2026-02-25T05:37:38.697Z [INFO] Prechecking CVEs...
+2026-02-25T05:37:39.374Z [INFO] Prechecking tests...
+2026-02-25T05:37:39.376Z [INFO] Run tests before upgrading...
+2026-02-25T05:37:59.032Z [INFO] Prepare initial state...
+2026-02-25T05:37:59.033Z [INFO] [Project asset-manager-showpune-fork]: getting project state.
+2026-02-25T05:37:59.033Z [INFO] [Project asset-manager-showpune-fork]: getting Java version.
+2026-02-25T05:37:59.034Z [INFO] [Project asset-manager-showpune-fork]: got Java version: 21
+2026-02-25T05:37:59.035Z [INFO] [Project asset-manager-showpune-fork]: getting dependencies promise.
+2026-02-25T05:37:59.036Z [INFO] Project initial state: {
+  "javaVersion": "21",
+  "dependencies": [
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-thymeleaf",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-web",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-amqp",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "software.amazon.awssdk",
+      "artifactId": "s3",
+      "type": "jar",
+      "version": "2.25.13",
+      "scope": "compile",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-devtools",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "runtime",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-configuration-processor",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.projectlombok",
+      "artifactId": "lombok",
+      "type": "jar",
+      "version": "1.18.30",
+      "scope": "compile",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-test",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "test",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-data-jpa",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.postgresql",
+      "artifactId": "postgresql",
+      "type": "jar",
+      "version": "42.6.0",
+      "scope": "runtime",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "com.h2database",
+      "artifactId": "h2",
+      "type": "jar",
+      "version": "2.2.224",
+      "scope": "test",
+      "module": "assets-manager-web"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-amqp",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "software.amazon.awssdk",
+      "artifactId": "s3",
+      "type": "jar",
+      "version": "2.25.13",
+      "scope": "compile",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "org.projectlombok",
+      "artifactId": "lombok",
+      "type": "jar",
+      "version": "1.18.30",
+      "scope": "compile",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-test",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "test",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "com.fasterxml.jackson.core",
+      "artifactId": "jackson-databind",
+      "type": "jar",
+      "version": "2.15.3",
+      "scope": "compile",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "org.springframework.boot",
+      "artifactId": "spring-boot-starter-data-jpa",
+      "type": "jar",
+      "version": "3.2.1",
+      "scope": "compile",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "org.postgresql",
+      "artifactId": "postgresql",
+      "type": "jar",
+      "version": "42.6.0",
+      "scope": "runtime",
+      "module": "assets-manager-worker"
+    },
+    {
+      "groupId": "java",
+      "artifactId": "*",
+      "version": "21"
+    }
+  ],
+  "buildResult": {
+    "numOfJavaFiles": 25,
+    "numOfClassFiles": 25,
+    "modulesBuildResult": {
+      ".": {
+        "numOfJavaFiles": 0,
+        "numOfClassFiles": 0
+      },
+      "web": {
+        "numOfJavaFiles": 14,
+        "numOfClassFiles": 14
+      },
+      "worker": {
+        "numOfJavaFiles": 11,
+        "numOfClassFiles": 11
+      }
+    },
+    "errors": [],
+    "command": "mvnw clean test-compile -q -B -fn"
+  },
+  "testResult": {
+    "errors": [],
+    "failures": [],
+    "summary": {
+      "tests": 1,
+      "failures": 0,
+      "errors": 0,
+      "skipped": 0
+    },
+    "reports": [
+      {
+        "name": "com.microsoft.migration.assets.AssetsManagerApplicationTests",
+        "time": 5.124,
+        "tests": 1,
+        "errors": 0,
+        "skipped": 0,
+        "failures": 0,
+        "testcases": [
+          {
+            "name": "contextLoads",
+            "classname": "com.microsoft.migration.assets.AssetsManagerApplicationTests",
+            "time": 0.411,
+            "failures": [],
+            "rerunFailures": [],
+            "flakyFailures": [],
+            "errors": [],
+            "rerunErrors": [],
+            "flakyErrors": []
+          }
+        ]
+      }
+    ]
+  }
+}

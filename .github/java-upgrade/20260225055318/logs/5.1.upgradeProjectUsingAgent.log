@@ -1,0 +1,16 @@
+2026-02-25T05:56:07.686Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade to Java 21 and Spring Boot 3.3.13
+2026-02-25T05:56:09.639Z [INFO] [appmod/java-upgrade-20260225055318 f87f72c] Upgrade to Java 21 and Spring Boot 3.3.13
+ 8 files changed, 18 insertions(+), 17 deletions(-)
+
+2026-02-25T05:56:09.712Z [INFO] f87f72ca4e47c987a63fbcbee17b3ca4c9eac488
+
+2026-02-25T05:56:09.800Z [INFO] 2	2	pom.xml
+1	1	web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
+3	3	web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
+1	1	web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
+4	2	web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+1	1	worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
+5	5	worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
+1	2	worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+
+2026-02-25T05:56:09.817Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade to Java 21 and Spring Boot 3.3.13

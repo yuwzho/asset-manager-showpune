@@ -1,0 +1,36 @@
+2026-02-25T05:31:34.401Z [INFO] [MavenBuildTool] Running test cases of D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:31:34.401Z [INFO] [Environment] Running command (Java 17): mvnw clean test -q -B -fn
+Standard Commons Logging discovery in action with spring-jcl: please remove commons-logging.jar from classpath in order to avoid potential conflicts
+13:31:46.742 [main] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.microsoft.migration.assets.AssetsManagerApplicationTests]: AssetsManagerApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+13:31:46.857 [main] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.microsoft.migration.assets.AssetsManagerApplication for test class com.microsoft.migration.assets.AssetsManagerApplicationTests
+13:31:47.064 [main] INFO org.springframework.boot.devtools.restart.RestartApplicationListener -- Restart disabled due to context in which it is running
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2026-02-25T13:31:47.305+08:00  INFO 46356 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : Starting AssetsManagerApplicationTests using Java 17.0.18 with PID 46356 (started by yuwzho in D:\code\ai\samples\repos\asset-manager-showpune-fork\web)
+2026-02-25T13:31:47.306+08:00  INFO 46356 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : No active profile set, falling back to 1 default profile: "default"
+2026-02-25T13:31:47.970+08:00  INFO 46356 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-02-25T13:31:48.025+08:00  INFO 46356 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49 ms. Found 1 JPA repository interface.
+2026-02-25T13:31:48.563+08:00  INFO 46356 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-02-25T13:31:48.681+08:00  INFO 46356 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2026-02-25T13:31:48.718+08:00  INFO 46356 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2026-02-25T13:31:49.013+08:00  INFO 46356 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-02-25T13:31:49.050+08:00  INFO 46356 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2026-02-25T13:31:49.221+08:00  INFO 46356 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2026-02-25T13:31:49.223+08:00  INFO 46356 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2026-02-25T13:31:49.252+08:00  WARN 46356 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2026-02-25T13:31:49.898+08:00  INFO 46356 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-02-25T13:31:49.946+08:00  INFO 46356 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-02-25T13:31:51.240+08:00  WARN 46356 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-02-25T13:31:51.969+08:00  INFO 46356 --- [           main] c.m.m.a.AssetsManagerApplicationTests    : Started AssetsManagerApplicationTests in 4.92 seconds (process running for 5.923)
+Java HotSpot(TM) 64-Bit Server VM warning: Sharing is only supported for boot loader classes because bootstrap classpath has been appended
+2026-02-25T05:31:54.398Z [INFO] [MavenBuildTool] loading surefire reports.
+2026-02-25T05:31:54.417Z [INFO] [MavenBuildTool] summarizing surefire reports.
+2026-02-25T05:31:54.418Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-02-25T05:31:54.418Z [INFO] [Environment] Running command (Java 17): mvnw clean -q -B -fn
