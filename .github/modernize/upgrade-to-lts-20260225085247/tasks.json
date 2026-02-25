@@ -55,7 +55,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "false"
       },
-      "status": "started"
+      "status": "success",
+      "taskSummary": "Upgraded Spring Boot from 3.2.1 to 3.4.13 LTS using OpenRewrite. Spring Framework updated to 6.2.x. Replaced deprecated Paths.get() with Path.of() in LocalFileStorageService.java and LocalFileProcessingService.java. Build passes and unit tests pass.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": null
+      }
     }
   ],
   "metadata": {
