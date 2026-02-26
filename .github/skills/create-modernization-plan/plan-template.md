@@ -67,7 +67,7 @@ Use this template to generate modernization plans for applications. Replace plac
 **Description**: [Brief description of what this task achieves from the user's perspective - focus on business/functional goals only]
 
 **Requirements**:
-  The original requirements from user input, leave it to empty if not specified from user input
+  The original requirements from user input, leave it to empty if not specified from user input. DO NOT write the skill description or pattern prompt here.
 
 **Environment Configration**:
   The environment Configration from user input (e.g. endpoint, access id), leave it to empty if not specified from user input
@@ -76,13 +76,18 @@ Use this template to generate modernization plans for applications. Replace plac
   The app folders that this task will operate
   If there are multiple apps to be migrate with the same skill, merge them in one task
 
-**Skills**: 
-  - Skill Name: [skill name must be used for the task, e.g., "migration-rabbitmq-to-servicebus"]
+[**IMPORTANT**: only add the following "Skills" part if this task has a corresponding skill rather than a pattern without skill. Skip this part if it's a pattern without skill]
+**Skills**:
+  - Skill Name: [skill name to be used for the task, e.g., "migration-rabbitmq-to-servicebus". MUST NOT be a pattern name]
     - Skill Location: [Skill location: "project", "remote" and "builtin", "builtin" is renamed from "custom"]
-  - Skill Name: [additional skill if needed]
+  - Skill Name: [additional skill if needed.]
     - Skill Location: [Skill location]
 
-**Success Criteria**: Success Crtiera according to user input, if no input, user the default criteria
+[**IMPORTANT**: only add the following "Prompt" part if the task is generated based on a pattern without a skill definition. Skip if a skill is attached to the task]
+**Prompt**:
+  [The execution prompt for the task pattern, specified in the supported patterns file]
+
+**Success Criteria**: Success Criteria according to user input, if no input, user the default criteria
 - [Pass Build: Yes (default) - Project must compile successfully after migration]
 - [Generate New Unit Tests (Mock-based): No (default) - Create mock-based unit tests for newly added Azure integration code to ensure test coverage]
 - [Generate New Integration Tests: No (default) - Create integration tests for Azure service interactions when requested:

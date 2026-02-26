@@ -1,0 +1,52 @@
+2026-02-25T09:17:10.118Z [INFO] Some dependencies have been modified or added during the upgrade. start validating CVEs.
+2026-02-25T09:17:10.120Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar,org.springframework.boot:spring-boot-starter-web:3.4.2:jar,org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar,org.springframework.boot:spring-boot-devtools:3.4.2:jar,org.springframework.boot:spring-boot-configuration-processor:3.4.2:jar,org.projectlombok:lombok:1.18.36:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,org.postgresql:postgresql:42.7.5:jar,com.h2database:h2:2.3.232:jar,org.springframework.boot:spring-boot-starter:3.4.2:jar,org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar,org.projectlombok:lombok:1.18.36:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,com.fasterxml.jackson.core:jackson-databind:2.18.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,org.postgresql:postgresql:42.7.5:jar,java:*:21
+2026-02-25T09:17:10.121Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-web:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar
+  - org.springframework.boot:spring-boot-devtools:3.4.2:jar
+  - org.springframework.boot:spring-boot-configuration-processor:3.4.2:jar
+  - org.projectlombok:lombok:1.18.36:jar
+  - org.springframework.boot:spring-boot-starter-test:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar
+  - org.postgresql:postgresql:42.7.5:jar
+  - com.h2database:h2:2.3.232:jar
+  - org.springframework.boot:spring-boot-starter:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar
+  - org.projectlombok:lombok:1.18.36:jar
+  - org.springframework.boot:spring-boot-starter-test:3.4.2:jar
+  - com.fasterxml.jackson.core:jackson-databind:2.18.2:jar
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar
+  - org.postgresql:postgresql:42.7.5:jar
+  - java:*:21...
+2026-02-25T09:17:10.121Z [INFO] getting gitHub access token...
+2026-02-25T09:17:10.122Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-02-25T09:17:10.122Z [INFO] Processing batch 1/1, size: 18
+2026-02-25T09:17:10.123Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-web:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar",
+  "org.springframework.boot:spring-boot-devtools:3.4.2:jar",
+  "org.springframework.boot:spring-boot-configuration-processor:3.4.2:jar",
+  "org.projectlombok:lombok:1.18.36:jar",
+  "org.springframework.boot:spring-boot-starter-test:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar",
+  "org.postgresql:postgresql:42.7.5:jar",
+  "com.h2database:h2:2.3.232:jar",
+  "org.springframework.boot:spring-boot-starter:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar",
+  "org.projectlombok:lombok:1.18.36:jar",
+  "org.springframework.boot:spring-boot-starter-test:3.4.2:jar",
+  "com.fasterxml.jackson.core:jackson-databind:2.18.2:jar",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar",
+  "org.postgresql:postgresql:42.7.5:jar",
+  "java:*:21"
+]
+2026-02-25T09:17:10.842Z [INFO] Fetched 1 total advisories across all pages
+2026-02-25T09:17:10.843Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-02-25T09:17:10.845Z [INFO] done getting 2 CVEs for 18 dependencies
+2026-02-25T09:17:10.846Z [INFO] calculating patched version by dep...
+2026-02-25T09:17:10.847Z [INFO] CVE CVE-2025-49146 for org.postgresql:postgresql:42.7.5: patched version 42.7.7
+2026-02-25T09:17:10.848Z [INFO] CVE CVE-2025-49146 for org.postgresql:postgresql:42.7.5: patched version 42.7.7
+2026-02-25T09:17:10.849Z [INFO] finished getting CVEs for dependencies.
+2026-02-25T09:17:10.850Z [INFO] Found 2 dependencies with known CVEs

@@ -1,0 +1,51 @@
+2026-02-25T09:17:53.652Z [INFO] Some dependencies have been modified or added during the upgrade. start validating CVEs.
+2026-02-25T09:17:53.654Z [INFO] Getting CVEs for dependencies: org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar,org.springframework.boot:spring-boot-starter-web:3.4.2:jar,org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar,org.springframework.boot:spring-boot-devtools:3.4.2:jar,org.springframework.boot:spring-boot-configuration-processor:3.4.2:jar,org.projectlombok:lombok:1.18.36:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,org.postgresql:postgresql:42.7.7:jar,com.h2database:h2:2.3.232:jar,org.springframework.boot:spring-boot-starter:3.4.2:jar,org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar,org.projectlombok:lombok:1.18.36:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,com.fasterxml.jackson.core:jackson-databind:2.18.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,org.postgresql:postgresql:42.7.7:jar,java:*:21
+2026-02-25T09:17:53.655Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-web:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar
+  - org.springframework.boot:spring-boot-devtools:3.4.2:jar
+  - org.springframework.boot:spring-boot-configuration-processor:3.4.2:jar
+  - org.projectlombok:lombok:1.18.36:jar
+  - org.springframework.boot:spring-boot-starter-test:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar
+  - org.postgresql:postgresql:42.7.7:jar
+  - com.h2database:h2:2.3.232:jar
+  - org.springframework.boot:spring-boot-starter:3.4.2:jar
+  - org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar
+  - org.projectlombok:lombok:1.18.36:jar
+  - org.springframework.boot:spring-boot-starter-test:3.4.2:jar
+  - com.fasterxml.jackson.core:jackson-databind:2.18.2:jar
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar
+  - org.postgresql:postgresql:42.7.7:jar
+  - java:*:21...
+2026-02-25T09:17:53.655Z [INFO] getting gitHub access token...
+2026-02-25T09:17:53.656Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-02-25T09:17:53.656Z [INFO] Processing batch 1/1, size: 18
+2026-02-25T09:17:53.657Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-web:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar",
+  "org.springframework.boot:spring-boot-devtools:3.4.2:jar",
+  "org.springframework.boot:spring-boot-configuration-processor:3.4.2:jar",
+  "org.projectlombok:lombok:1.18.36:jar",
+  "org.springframework.boot:spring-boot-starter-test:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar",
+  "org.postgresql:postgresql:42.7.7:jar",
+  "com.h2database:h2:2.3.232:jar",
+  "org.springframework.boot:spring-boot-starter:3.4.2:jar",
+  "org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar",
+  "org.projectlombok:lombok:1.18.36:jar",
+  "org.springframework.boot:spring-boot-starter-test:3.4.2:jar",
+  "com.fasterxml.jackson.core:jackson-databind:2.18.2:jar",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar",
+  "org.postgresql:postgresql:42.7.7:jar",
+  "java:*:21"
+]
+2026-02-25T09:17:54.254Z [INFO] Fetched 0 total advisories across all pages
+2026-02-25T09:17:54.255Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-02-25T09:17:54.255Z [INFO] done getting 0 CVEs for 18 dependencies
+2026-02-25T09:17:54.255Z [INFO] calculating patched version by dep...
+2026-02-25T09:17:54.256Z [INFO] finished getting CVEs for dependencies.
+2026-02-25T09:17:54.256Z [INFO] Found 0 dependencies with known CVEs
+2026-02-25T09:17:54.257Z [INFO] No known CVEs that need to be fixed are found for dependencies: org.springframework.boot:spring-boot-starter-thymeleaf:3.4.2:jar,org.springframework.boot:spring-boot-starter-web:3.4.2:jar,org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar,org.springframework.boot:spring-boot-devtools:3.4.2:jar,org.springframework.boot:spring-boot-configuration-processor:3.4.2:jar,org.projectlombok:lombok:1.18.36:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,org.postgresql:postgresql:42.7.7:jar,com.h2database:h2:2.3.232:jar,org.springframework.boot:spring-boot-starter:3.4.2:jar,org.springframework.boot:spring-boot-starter-amqp:3.4.2:jar,org.projectlombok:lombok:1.18.36:jar,org.springframework.boot:spring-boot-starter-test:3.4.2:jar,com.fasterxml.jackson.core:jackson-databind:2.18.2:jar,org.springframework.boot:spring-boot-starter-data-jpa:3.4.2:jar,org.postgresql:postgresql:42.7.7:jar,java:*:21

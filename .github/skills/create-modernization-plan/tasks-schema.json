@@ -112,7 +112,7 @@
       "properties": {
         "name": {
           "type": "string",
-          "description": "[The skill name that will be used for this task, e.g., 'migration-rabbitmq-to-servicebus']"
+          "description": "[The skill name that will be used for this task, e.g., 'migration-rabbitmq-to-servicebus'.]"
         },
         "location": {
           "type": "string",
