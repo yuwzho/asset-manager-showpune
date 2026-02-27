@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: com.microsoft.migration.assets.AssetsManagerApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.039 s -- in com.microsoft.migration.assets.AssetsManagerApplicationTests

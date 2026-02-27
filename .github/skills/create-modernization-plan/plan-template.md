@@ -60,39 +60,6 @@ Use this template to generate modernization plans for applications. Replace plac
 
 ## Code
 
-**Purpose**: Break down coding work into discrete migration tasks. Each task represents a user-requested migration from one service/component to another, or a specific business logic modernization.
-
-**Breakdown Rules**:
-
-- Create tasks ONLY based on what the user explicitly requested - do not infer or add implicit tasks
-- Group related changes that serve a single user goal into one task (e.g., all changes needed to migrate to PostgreSQL)
-- If the JDK version is under 17, add task to upgrade the JDK to latest version unless user specified not to do it
-- Find relevant migration skills and create one task for each skill
-- **Skill Priority**: Skills are searched in the following order:
-  1. Project skills: Skill with location project
-  2. Built-in skills: Skill with location custom
-- **IMPORTANT**: If there are similar skills defined in project skill `.github/skills/` versus other skills, MUST use the one defined in project.
-- Each task should be independently testable with integration tests
-- Do not add tests for unimpacted code or existing functionality unless user requested
-- **IMPORTANT**: Do NOT read individual skill files at this stage; Do Not include the skill detail in the tasks.
-
-**Java Upgrade Task Guidelines**:
-**IMPORTANT**: Only add upgrade task if the JDK version is under 17 or user explicitly requested. Upgrade task must be the first task if exists
-When creating upgrade tasks for Java projects (current latest versions: Java 17+, Spring Boot 3.x+, Spring Framework 6.x+), create task highest-level upgrade task that encompasses all necessary changes:
-
-- **Spring Boot 3.x upgrade** (when Java 21+ not explicitly requested):
-  - Create a single task: "Upgrade Spring Boot to 3.x"
-  - Include in task description: This upgrade includes JDK 17, Spring Framework 6.x, and migration from JavaEE (javax.*) to Jakarta EE (jakarta.*)
-
-- **Spring Framework 6.x upgrade** (when Java 21+ not explicitly requested and Spring Boot not being upgraded):
-  - Create a single task: "Upgrade Spring Framework to 6.x"
-  - Include in task description: This upgrade includes JDK 17
-
-- **Java 21+ upgrade** (when explicitly requested):
-  - Create a single task: "Upgrade Java to version X"
-  - Include in task description: Specify the target version and related framework impacts
-
-
 **Template**:
 ```markdown
 ### Task 1: [Task Name]
@@ -100,7 +67,7 @@ When creating upgrade tasks for Java projects (current latest versions: Java 17+
 **Description**: [Brief description of what this task achieves from the user's perspective - focus on business/functional goals only]
 
 **Requirements**:
-  The original requirements from user input, leave it to empty if not specified from user input
+  The original requirements from user input, leave it to empty if not specified from user input. DO NOT write the skill description or pattern prompt here.
 
 **Environment Configration**:
   The environment Configration from user input (e.g. endpoint, access id), leave it to empty if not specified from user input
@@ -109,13 +76,18 @@ When creating upgrade tasks for Java projects (current latest versions: Java 17+
   The app folders that this task will operate
   If there are multiple apps to be migrate with the same skill, merge them in one task
 
-**Skills**: 
-  - Skill Name: [skill name must be used for the task, e.g., "migration-rabbitmq-to-servicebus"]
+[**IMPORTANT**: only add the following "Skills" part if this task has a corresponding skill rather than a pattern without skill. Skip this part if it's a pattern without skill]
+**Skills**:
+  - Skill Name: [skill name to be used for the task, e.g., "migration-rabbitmq-to-servicebus". MUST NOT be a pattern name]
     - Skill Location: [Skill location: "project", "remote" and "builtin", "builtin" is renamed from "custom"]
-  - Skill Name: [additional skill if needed]
+  - Skill Name: [additional skill if needed.]
     - Skill Location: [Skill location]
 
-**Success Criteria**: Success Crtiera according to user input, if no input, user the default criteria
+[**IMPORTANT**: only add the following "Prompt" part if the task is generated based on a pattern without a skill definition. Skip if a skill is attached to the task]
+**Prompt**:
+  [The execution prompt for the task pattern, specified in the supported patterns file]
+
+**Success Criteria**: Success Criteria according to user input, if no input, user the default criteria
 - [Pass Build: Yes (default) - Project must compile successfully after migration]
 - [Generate New Unit Tests (Mock-based): No (default) - Create mock-based unit tests for newly added Azure integration code to ensure test coverage]
 - [Generate New Integration Tests: No (default) - Create integration tests for Azure service interactions when requested:

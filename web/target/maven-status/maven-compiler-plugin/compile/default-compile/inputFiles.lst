@@ -1,0 +1,13 @@
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\AssetsManagerApplication.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\config\AwsS3Config.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\config\RabbitConfig.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\controller\HomeController.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\controller\S3Controller.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\model\ImageMetadata.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\model\ImageProcessingMessage.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\model\S3StorageItem.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\repository\ImageMetadataRepository.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\service\AwsS3Service.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\service\BackupMessageProcessor.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\service\LocalFileStorageService.java
+D:\code\ai\samples\repos\asset-manager-showpune-fork\web\src\main\java\com\microsoft\migration\assets\service\StorageService.java
