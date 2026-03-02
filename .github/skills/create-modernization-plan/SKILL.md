@@ -19,10 +19,10 @@ language (Mandatory): The programming language of the project (java or dotnet)
 ## Supported Task Patterns
 
 Read the supported patterns file based on the language:
-- For .NET projects: Read `supported-patterns.dotnet.md`
-- For all other projects: Read `supported-patterns.java.md`. Default option.
+- For .NET projects: Read `supported-patterns-dotnet.md`
+- For all other projects: Read `supported-patterns-java.md`. Default option.
 
-These files contain the list of supported task patterns with and without skill definitions. The skill location from the files are custom
+These files contain the list of supported task patterns with and without skill definitions. If a skill is available, the skill location should be set to `builtin`.
 
 ## Workflow
 
@@ -43,18 +43,20 @@ Given the user input, do this:
     4) Generate a separate tasks.json file following the tasks-schema.json schema with all upgrade, transform, Containerization, and Deployment tasks
     5) Save the tasks in folder ${modernization-work-folder} with the filename tasks.json. If tasks.json already exists, overwrite it.
 
+
     **IMPORTANT**: The plan.md should NOT contain the detailed task breakdown. Those details go into tasks.json for better tracking and programmatic access.
 
-    **Task Breakdown Rules**: When creating tasks for tasks.json:
-
+    **Task Breakdown Rules**: When creating tasks for tasks.json and plan.md:
+    - Purpose: Break down coding work into discrete migration tasks. Each task represents a user-requested migration from one service/component to another, or a specific business logic modernization.
     - Create tasks ONLY based on what the user explicitly requested - do not infer or add implicit tasks
     - Group related changes that serve a single user goal into one task (e.g., all changes needed to migrate to PostgreSQL)
     - If the JDK version is under 17, add task to upgrade the JDK to latest version unless user specified not to do it
-    - Find a matched skill / prompt for the task, following the following priority order.
+    - Find a matched skill / pattern for the task, following the following priority order.
       1. Skills available for the project, which will be listed in the `skill` tool description.
-      2. Skills that will be attached at runtime, listed in the supported patterns file
-      3. Otherwise if no relevant skill is available for the task pattern, use the prompt segment from the user directly. DO NOT expand the request scope.
+      2. Patterns that will be attached and available at plan execution phase, listed in the supported patterns file.
+      3. Otherwise if no relevant pattern is available for the task pattern, use the prompt segment from the user directly. DO NOT expand the request scope.
     - **IMPORTANT**:
+      - You MUST NOT use the pattern name or execution prompt as the skill name in the generated plan and tasks.json.
       - If there are similar skills defined in project skill `.github/skills/` versus other skills, MUST use the one defined in project.
       - Skills must be fully matched. For migration scenarios, both the source product and target product must match the task intent.
     - Each task should be independently testable with integration tests

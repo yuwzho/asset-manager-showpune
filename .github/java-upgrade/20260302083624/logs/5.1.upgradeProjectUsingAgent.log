@@ -1,0 +1,11 @@
+2026-03-02T08:38:51.397Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Java from 17 to 21 using OpenRewrite UpgradeToJava21 recipe
+2026-03-02T08:38:51.704Z [INFO] [appmod/java-upgrade-20260302083624 2083fc2] Upgrade Java from 17 to 21 using OpenRewrite UpgradeToJava21 recipe
+ 3 files changed, 6 insertions(+), 5 deletions(-)
+
+2026-03-02T08:38:51.773Z [INFO] 2083fc212bdf219151af9954f5c76c334650a6d3
+
+2026-03-02T08:38:51.850Z [INFO] 1	1	pom.xml
+4	2	web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+1	2	worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+
+2026-03-02T08:38:51.868Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Java from 17 to 21 using OpenRewrite UpgradeToJava21 recipe

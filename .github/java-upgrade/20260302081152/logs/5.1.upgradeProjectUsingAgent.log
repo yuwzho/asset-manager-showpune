@@ -1,0 +1,11 @@
+2026-03-02T08:14:10.481Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Java version from 17 to 21 in pom.xml
+2026-03-02T08:14:10.834Z [INFO] [appmod/java-upgrade-20260302081152 3c04595] Upgrade Java version from 17 to 21 in pom.xml
+ 3 files changed, 6 insertions(+), 5 deletions(-)
+
+2026-03-02T08:14:10.900Z [INFO] 3c045958678afd2015bfaba30e194d85b8821380
+
+2026-03-02T08:14:10.978Z [INFO] 1	1	pom.xml
+4	2	web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+1	2	worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+
+2026-03-02T08:14:10.995Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Java version from 17 to 21 in pom.xml

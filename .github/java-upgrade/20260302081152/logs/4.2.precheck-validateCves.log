@@ -1,0 +1,53 @@
+2026-03-02T08:12:42.667Z [INFO] getting CVEs for dependencies:
+ - org.springframework.boot:spring-boot-starter-thymeleaf:3.2.1
+  - org.springframework.boot:spring-boot-starter-web:3.2.1
+  - org.springframework.boot:spring-boot-starter-amqp:3.2.1
+  - software.amazon.awssdk:s3:2.25.13
+  - org.springframework.boot:spring-boot-devtools:3.2.1
+  - org.springframework.boot:spring-boot-configuration-processor:3.2.1
+  - org.projectlombok:lombok:1.18.30
+  - org.springframework.boot:spring-boot-starter-test:3.2.1
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.2.1
+  - org.postgresql:postgresql:42.6.0
+  - com.h2database:h2:2.2.224
+  - org.springframework.boot:spring-boot-starter:3.2.1
+  - org.springframework.boot:spring-boot-starter-amqp:3.2.1
+  - software.amazon.awssdk:s3:2.25.13
+  - org.projectlombok:lombok:1.18.30
+  - org.springframework.boot:spring-boot-starter-test:3.2.1
+  - com.fasterxml.jackson.core:jackson-databind:2.15.3
+  - org.springframework.boot:spring-boot-starter-data-jpa:3.2.1
+  - org.postgresql:postgresql:42.6.0
+  - java:*:17...
+2026-03-02T08:12:42.667Z [INFO] getting gitHub access token...
+2026-03-02T08:12:42.668Z [ERROR] Failed to get GitHub access token to validate CVEs for the given dependencies.
+2026-03-02T08:12:42.668Z [INFO] Processing batch 1/1, size: 20
+2026-03-02T08:12:42.670Z [INFO] listing CVEs from GitHub for dependencies [
+  "org.springframework.boot:spring-boot-starter-thymeleaf:3.2.1",
+  "org.springframework.boot:spring-boot-starter-web:3.2.1",
+  "org.springframework.boot:spring-boot-starter-amqp:3.2.1",
+  "software.amazon.awssdk:s3:2.25.13",
+  "org.springframework.boot:spring-boot-devtools:3.2.1",
+  "org.springframework.boot:spring-boot-configuration-processor:3.2.1",
+  "org.projectlombok:lombok:1.18.30",
+  "org.springframework.boot:spring-boot-starter-test:3.2.1",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.2.1",
+  "org.postgresql:postgresql:42.6.0",
+  "com.h2database:h2:2.2.224",
+  "org.springframework.boot:spring-boot-starter:3.2.1",
+  "org.springframework.boot:spring-boot-starter-amqp:3.2.1",
+  "software.amazon.awssdk:s3:2.25.13",
+  "org.projectlombok:lombok:1.18.30",
+  "org.springframework.boot:spring-boot-starter-test:3.2.1",
+  "com.fasterxml.jackson.core:jackson-databind:2.15.3",
+  "org.springframework.boot:spring-boot-starter-data-jpa:3.2.1",
+  "org.postgresql:postgresql:42.6.0",
+  "java:*:17"
+]
+2026-03-02T08:12:43.355Z [INFO] Fetched 2 total advisories across all pages
+2026-03-02T08:12:43.356Z [INFO] grouping CVEs and finding max patched version by dep...
+2026-03-02T08:12:43.357Z [INFO] done getting 2 CVEs for 20 dependencies
+2026-03-02T08:12:43.357Z [INFO] calculating patched version by dep...
+2026-03-02T08:12:43.358Z [INFO] CVE CVE-2024-1597 for org.postgresql:postgresql:42.6.0: patched version 42.6.1
+2026-03-02T08:12:43.359Z [INFO] CVE CVE-2024-1597 for org.postgresql:postgresql:42.6.0: patched version 42.6.1
+2026-03-02T08:12:43.359Z [INFO] finished getting CVEs for dependencies.

@@ -1,0 +1,9 @@
+2026-03-02T02:49:18.075Z [INFO] [Task.commitChanges](7.2): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade postgresql to 42.7.7 to fix CVE-2025-49146
+2026-03-02T02:49:18.607Z [INFO] [appmod/java-upgrade-20260302024357 460cead] Upgrade postgresql to 42.7.7 to fix CVE-2025-49146
+ 1 file changed, 1 insertion(+)
+
+2026-03-02T02:49:18.669Z [INFO] 460ceada48d7b139b78064503fc0396d08f43433
+
+2026-03-02T02:49:18.740Z [INFO] 1	0	pom.xml
+
+2026-03-02T02:49:18.751Z [INFO] [Task.commitChanges](7.2): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade postgresql to 42.7.7 to fix CVE-2025-49146
