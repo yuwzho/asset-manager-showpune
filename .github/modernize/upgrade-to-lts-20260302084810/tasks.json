@@ -87,7 +87,16 @@
         "passIntegrationTests": "false",
         "securityComplianceCheck": "true"
       },
-      "status": "started"
+      "status": "success",
+      "taskSummary": "Successfully upgraded project dependencies: AWS SDK v2 from 2.25.13 to 2.34.0, Maven wrapper from 3.9.9 to 3.9.12. All other dependencies managed by Spring Boot BOM. Build and unit tests pass. No CVEs found.",
+      "successCriteriaStatus": {
+        "passBuild": "true",
+        "generateNewUnitTests": "false",
+        "generateNewIntegrationTests": "false",
+        "passUnitTests": "true",
+        "passIntegrationTests": "false",
+        "securityComplianceCheck": "true"
+      }
     }
   ],
   "metadata": {
