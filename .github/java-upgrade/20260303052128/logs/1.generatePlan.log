@@ -1,0 +1,25 @@
+2026-03-03T05:21:28.400Z [INFO] Initializing project configuration...
+2026-03-03T05:21:28.401Z [INFO] Project D:\code\ai\samples\repos\asset-manager-showpune-fork is a maven project, try to get java version from pom.xml
+2026-03-03T05:21:28.403Z [INFO] Project java version: 21
+2026-03-03T05:21:28.403Z [INFO] Maven project detected.
+2026-03-03T05:21:28.404Z [INFO] Build tool type: mvnw
+2026-03-03T05:21:28.404Z [INFO] [Environment] Running command (Java 21): java -version
+java version "21.0.10" 2026-01-20 LTS
+Java(TM) SE Runtime Environment (build 21.0.10+8-LTS-217)
+Java HotSpot(TM) 64-Bit Server VM (build 21.0.10+8-LTS-217, mixed mode, sharing)
+2026-03-03T05:21:28.493Z [INFO] [JdkEnvironment] Got real Java version: 21.0.10
+2026-03-03T05:21:28.494Z [INFO] JDK: {
+  "name": "java",
+  "path": "C:\\Program Files\\Java\\jdk-21.0.10\\bin",
+  "version": "21"
+}
+2026-03-03T05:21:28.505Z [INFO] [Environment] Running command (Java 21): mvnw --version
+The directory name is invalid.
+2026-03-03T05:21:28.524Z [ERROR] Failed to get the version of build tool at "C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin\mvn.cmd" with error:
+Error: Failed to run command: "mvnw --version" with error code 1
+The directory name is invalid..
+2026-03-03T05:21:28.525Z [ERROR] Failed to prepare project configuration or init upgrade options: Failed to get the version of build tool at "C:\ProgramData\chocolatey\lib\maven\apache-maven-3.9.11\bin\mvn.cmd" with error:
+Error: Failed to run command: "mvnw --version" with error code 1
+The directory name is invalid..
+
+Please ensure the project contains a valid Maven Wrapper (mvnw)/Gradle Wrapper (gradlew) or upgrade the Wrapper to a newer compatible version. Or otherwise switch to use a local Maven/Gradle installation instead..

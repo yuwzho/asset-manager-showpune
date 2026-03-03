@@ -1,0 +1,16 @@
+2026-03-03T05:24:13.029Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Spring Boot from 3.2.1 to 3.3.x using OpenRewrite
+2026-03-03T05:24:13.489Z [INFO] [main eb9376a] Upgrade Spring Boot from 3.2.1 to 3.3.x using OpenRewrite
+ 7 files changed, 18 insertions(+), 12 deletions(-)
+ create mode 100644 rewrite.yml
+
+2026-03-03T05:24:13.554Z [INFO] eb9376af07168bef0dedb034aca67d300a3eec5f
+
+2026-03-03T05:24:13.634Z [INFO] 1	1	pom.xml
+6	0	rewrite.yml
+1	1	web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
+3	3	web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
+1	1	web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
+1	1	worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
+5	5	worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
+
+2026-03-03T05:24:13.651Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Spring Boot from 3.2.1 to 3.3.x using OpenRewrite
