@@ -1,9 +1,0 @@
-2026-03-02T03:59:44.770Z [INFO] [Task.commitChanges](6.1): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Spring Boot to 3.4.5
-2026-03-02T03:59:45.340Z [INFO] [appmod/java-upgrade-20260302035614 592b47d] Upgrade Spring Boot to 3.4.5
- 1 file changed, 1 insertion(+), 1 deletion(-)
-
-2026-03-02T03:59:45.404Z [INFO] 592b47d21f2b667b13237cc129d20a77fd6a103e
-
-2026-03-02T03:59:45.475Z [INFO] 1	1	pom.xml
-
-2026-03-02T03:59:45.486Z [INFO] [Task.commitChanges](6.1): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Upgrade Spring Boot to 3.4.5
