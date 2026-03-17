@@ -1,0 +1,16 @@
+2026-03-11T07:17:18.417Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Milestone 1: Upgrade Spring Boot from 3.2.1 to 3.3.13 and Java from 17 to 21
+2026-03-11T07:17:18.805Z [INFO] [app-modernize-20260311070407 02969e8] Milestone 1: Upgrade Spring Boot from 3.2.1 to 3.3.13 and Java from 17 to 21
+ 8 files changed, 18 insertions(+), 17 deletions(-)
+
+2026-03-11T07:17:18.872Z [INFO] 02969e84cd0eb451b1d6a924f8824ca0aeebdcfd
+
+2026-03-11T07:17:18.957Z [INFO] 2	2	pom.xml
+1	1	web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
+3	3	web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
+1	1	web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
+4	2	web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+1	1	worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
+5	5	worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
+1	2	worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+
+2026-03-11T07:17:18.977Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Milestone 1: Upgrade Spring Boot from 3.2.1 to 3.3.13 and Java from 17 to 21

@@ -1,0 +1,22 @@
+2026-03-11T07:17:18.983Z [INFO] [BaseBuildTool] Firing config modified event for mvnw, sleeping for 5 seconds
+2026-03-11T07:17:18.983Z [INFO] [Environment] Running command (Java 17): mvnw --version
+Apache Maven 3.9.9 (8e8579a9e76f7d015ee5ec7bfcdc97d260186937)
+Maven home: C:\Users\yuwzho\.m2\wrapper\dists\apache-maven-3.9.9\977a63e90f436cd6ade95b4c0e10c20c
+Java version: 17.0.18, vendor: Oracle Corporation, runtime: C:\Program Files\Java\jdk-17.0.18
+Default locale: en_US, platform encoding: Cp1252
+OS name: "windows 11", version: "10.0", arch: "amd64", family: "windows"
+2026-03-11T07:17:20.577Z [INFO] [BaseBuildTool] New version of mvnw: 3.9.9 -> 3.9.9
+2026-03-11T07:17:20.578Z [INFO] [MavenBuildTool] Getting Java version of D:\code\ai\samples\repos\asset-manager-showpune-fork from pom.xml
+2026-03-11T07:17:20.579Z [INFO] [MavenBuildTool] Searching for pom.xml files in D:\code\ai\samples\repos\asset-manager-showpune-fork
+2026-03-11T07:17:20.580Z [INFO] [MavenBuildTool] Found pom.xml files: D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\web\pom.xml, D:\code\ai\samples\repos\asset-manager-showpune-fork\worker\pom.xml
+2026-03-11T07:17:20.581Z [INFO] [MavenBuildTool] Java version found in D:\code\ai\samples\repos\asset-manager-showpune-fork\pom.xml: 21
+2026-03-11T07:17:20.582Z [INFO] [BaseBuildTool] Notifying Java version/Config change: '21' || '21'
+2026-03-11T07:17:20.585Z [INFO] [MavenBuildTool] Getting build errors of D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-03-11T07:17:20.586Z [INFO] [Environment] Running command (Java 21): mvnw clean test-compile -q -B -fn
+2026-03-11T07:17:32.833Z [INFO] [MavenBuildTool] parsing compilation errors.
+2026-03-11T07:17:32.834Z [INFO] [BaseBuildTool] Found 3 modules: ., web, worker
+2026-03-11T07:17:32.847Z [INFO] [BaseBuildTool] Finish counting Java and class files
+2026-03-11T07:17:32.847Z [INFO] [MavenBuildTool] Cleaning D:\code\ai\samples\repos\asset-manager-showpune-fork using Maven
+2026-03-11T07:17:32.848Z [INFO] [Environment] Running command (Java 21): mvnw clean -q -B -fn
+2026-03-11T07:17:36.270Z [INFO] Build succeeded! There are no build errors in the project.
+2026-03-11T07:17:36.274Z [INFO] Build project completed. Looking for next task...

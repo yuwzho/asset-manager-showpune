@@ -1,0 +1,16 @@
+2026-03-17T02:47:03.655Z [INFO] [Task.commitChanges](5.1): Committing changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Milestone 1: Upgrade Spring Boot to 3.3.13 and Java to 21 via OpenRewrite
+2026-03-17T02:47:04.420Z [INFO] [app-modernize-20260311070407 fd87427] Milestone 1: Upgrade Spring Boot to 3.3.13 and Java to 21 via OpenRewrite
+ 8 files changed, 18 insertions(+), 17 deletions(-)
+
+2026-03-17T02:47:04.506Z [INFO] fd8742754c4d6f00a31f7ed0acd4e6952c8403cf
+
+2026-03-17T02:47:04.605Z [INFO] 2	2	pom.xml
+1	1	web/src/main/java/com/microsoft/migration/assets/config/AwsS3Config.java
+3	3	web/src/main/java/com/microsoft/migration/assets/config/RabbitConfig.java
+1	1	web/src/main/java/com/microsoft/migration/assets/controller/S3Controller.java
+4	2	web/src/main/java/com/microsoft/migration/assets/service/LocalFileStorageService.java
+1	1	worker/src/main/java/com/microsoft/migration/assets/worker/config/AwsS3Config.java
+5	5	worker/src/main/java/com/microsoft/migration/assets/worker/config/RabbitConfig.java
+1	2	worker/src/main/java/com/microsoft/migration/assets/worker/service/LocalFileProcessingService.java
+
+2026-03-17T02:47:04.631Z [INFO] [Task.commitChanges](5.1): Committed changes for D:\code\ai\samples\repos\asset-manager-showpune-fork with message: Milestone 1: Upgrade Spring Boot to 3.3.13 and Java to 21 via OpenRewrite
